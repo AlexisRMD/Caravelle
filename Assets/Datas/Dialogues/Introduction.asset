@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb4f5dce6c216b41b4cc7d4bb870db0, type: 3}
+  m_Name: Introduction
+  m_EditorClassIdentifier: 
+  Sentences:
+  - "Cher ami. Vous n\u2019\xEAtes pas sans savoir que le royaume est confront\xE9
+    \xE0 de graves dangers."
+  - "La guerre gronde en notre royaume, et les luttes atteignent le c\u0153ur m\xEAme
+    du conseil royal. L\u2019un des n\xF4tres a myst\xE9rieusement disparu. Je sollicite
+    votre aide pour faire la lumi\xE8re sur cette affaire et comprendre les origines
+    de ce drame."
+  - "Vous avez ma confiance, mais agissez bri\xE8vement et secr\xE8tement. La situation
+    politique est des plus complexes et nous courrons au d\xE9sastre\_!"

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: Marguerite de Bourgogne
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 67152f1ff58c1a8429cc8b5f70f1642e, type: 3}
+  Sprite: {fileID: 21300000, guid: c7b1d10315c158a48b067f801f550094, type: 3}
   Name: Marguerite de Bourgogne
   Description: 
   Type: 0

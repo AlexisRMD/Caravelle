@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: France
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 85c0cfaab08bafd4391807968ba0e41a, type: 3}
   Name: France
   Description: 
   Type: 1

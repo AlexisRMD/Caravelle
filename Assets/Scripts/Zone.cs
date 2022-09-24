@@ -12,15 +12,19 @@ public class Zone : MonoBehaviour
 
     private void Start()
     {
-        index = 0;
+        index = -1;
     }
     public List<Transform> DropPoints;
 
     public Vector3 GetDropPosition()
     {
-        if (DropPoints.Count > 0)
+        if (index < DropPoints.Count-1)
         {
-            index = (index + Random.Range(1, DropPoints.Count - 1)) % DropPoints.Count;
+            index++;
+        }
+        else
+        {
+            index = 0;
         }
         return DropPoints[index].position;
     }
