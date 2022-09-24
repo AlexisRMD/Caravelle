@@ -60,6 +60,17 @@ public class Tableau : MonoBehaviour
             SelectStone.Instance.RemoveStone(item);
         }
         step.hasBeenDrop = true;
+
+        //alternative connexions
+        HashSet<int> sameStep = new HashSet<int>();
+        sameStep.Add(15); sameStep.Add(16); sameStep.Add(17); sameStep.Add(18); sameStep.Add(19);
+        if (sameStep.Contains(step.num))
+        {
+            foreach (var num in sameStep)
+            {
+                historic[num].hasBeenDrop = true;
+            }
+        }
     }
 
     public void VerifyLink(GameObject g1, GameObject g2, LineController linkObj)

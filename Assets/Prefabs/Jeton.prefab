@@ -114,8 +114,9 @@ GameObject:
   - component: {fileID: 6732895755992807741}
   - component: {fileID: 5382250864996032601}
   - component: {fileID: 5382250864996032606}
-  - component: {fileID: 5382250864996032597}
   - component: {fileID: 5382250864996032598}
+  - component: {fileID: 7112039919712752599}
+  - component: {fileID: 1863646896150027450}
   m_Layer: 0
   m_Name: Jeton
   m_TagString: Draggable
@@ -221,27 +222,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3579005124961438040, guid: 39659a5b079325046a5013f475b22f4c, type: 3}
---- !u!114 &5382250864996032597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5075822263568177384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aa10f36a19ebc94791b0d33c7ae9ab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Type: 1
-  Image: {fileID: 5382250866067261334}
-  Name: {fileID: 5382250865571750146}
-  Description: {fileID: 5382250866195155139}
-  Data: {fileID: 11400000, guid: e16d1831f8c6dc6429211619ee0cfeba, type: 2}
-  Outline: {fileID: 5382250864996032598}
-  DescriptionCanvas: {fileID: 5382250865114636831}
-  HoverTime: 0.5
-  links: {fileID: 0}
 --- !u!114 &5382250864996032598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +240,41 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &7112039919712752599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5075822263568177384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc5c8c413d83034cbe0c4a24d49b88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 0
+  Image: {fileID: 5382250866067261334}
+  Name: {fileID: 5382250865571750146}
+  Description: {fileID: 5382250866195155139}
+  Data: {fileID: 0}
+  Outline: {fileID: 5382250864996032598}
+  DescriptionCanvas: {fileID: 5382250865114636831}
+  HoverTime: 0.5
+  links: {fileID: 1863646896150027450}
+  rotationInit: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1863646896150027450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5075822263568177384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d478ef72874100442847049b4a4ba2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  links: []
 --- !u!1 &5382250865114636803
 GameObject:
   m_ObjectHideFlags: 0

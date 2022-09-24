@@ -7,11 +7,13 @@ public class LineController : MonoBehaviour
     public GameObject startObject = null;
     public GameObject endObject = null;
 
+    private float posY = 0.05f;
+
     public void FollowLine(Vector3 pos)
     {
         Vector3 startPos = startObject.transform.position;
-        startPos.y = 0.25f;
-        pos.y = 0.25f;
+        startPos.y = posY;
+        pos.y = posY;
 
         float distance = Vector3.Distance(startPos, pos);
         transform.localScale = new Vector3(transform.localScale.x, distance / 2, transform.localScale.z);
@@ -25,9 +27,9 @@ public class LineController : MonoBehaviour
     public void UpdateLine()
     {
         Vector3 startPos = startObject.transform.position;
-        startPos.y = 0.25f;
+        startPos.y = posY;
         Vector3 endPos = endObject.transform.position;
-        endPos.y = 0.25f;
+        endPos.y = posY;
 
         float distance = Vector3.Distance(startPos, endPos);
         transform.localScale = new Vector3(transform.localScale.x, distance / 2, transform.localScale.z);
