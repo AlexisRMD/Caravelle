@@ -23,7 +23,6 @@ public class CameraBehavior : MonoBehaviour
         {
             StartCoroutine(Dialogue.Instance.StartDialogue(dd));
         }
-
     }
 
     private void Move()

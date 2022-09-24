@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb4f5dce6c216b41b4cc7d4bb870db0, type: 3}
+  m_Name: Epilogue
+  m_EditorClassIdentifier: 
+  Sentences:
+  - "Cher ami. Je tiens \xE0 vous f\xE9liciter pour avoir su faire la lumi\xE8re
+    sur toute cette affaire."
+  - "Les man\u0153uvres politiques de monseigneur de Richemont et du sire de La Tr\xE9moille
+    ont certes amen\xE9es la disparition de messire de Giac, mais ils ne purent en
+    tirer r\xE9compense."
+  - "Le roi a fait appel \xE0 un jeune \xE9cuyer, Jean Vernet dit le Camus de Beaulieu."
+  - "Esp\xE9rons pour lui que son innocence le prot\xE8ge, j\u2019ai ou\xEF dire
+    que le conn\xE9table n\u2019en avait pas fini avec lui. Je ferai ce que je peux
+    pour prot\xE9ger la couronne."
