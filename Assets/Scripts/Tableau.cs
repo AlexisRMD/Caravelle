@@ -7,10 +7,22 @@ public class Tableau : MonoBehaviour
     public static Tableau Instance;
     public List<Drop> historic = new();
 
+    [Header("References Stones")]
     public GameObject StoneCharacter;
     public GameObject StoneLocation;
     public GameObject StoneAction;
     public GameObject StoneConcept;
+    [Header("References Documents")]
+    public GameObject Doc1;
+    public GameObject Doc2;
+    public GameObject Doc3;
+    public GameObject Doc4;
+    public GameObject Doc5;
+    public GameObject Doc6;
+    public GameObject Doc7;
+    public GameObject Doc8;
+    public GameObject Doc9;
+    public GameObject Doc10;
 
     [HideInInspector] public int linksRemaining;
     private int errors = 0;
