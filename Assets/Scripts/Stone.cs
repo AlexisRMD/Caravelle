@@ -20,7 +20,7 @@ public class Stone : MonoBehaviour
 
     [Header("Refs")]
     public Outline Outline;
-    public Canvas canvas;
+    public Canvas DescriptionCanvas;
 
     public float HoverTime = 0.5f;
     public ListLinks links;
@@ -30,9 +30,9 @@ public class Stone : MonoBehaviour
     {
         rotationInit = gameObject.transform.rotation;
 
-        canvas.sortingOrder = 0;
+        DescriptionCanvas.sortingOrder = 0;
         Outline.enabled = false;
-        Description.gameObject.SetActive(false);
+        DescriptionCanvas.gameObject.SetActive(false);
         if (Data != null)
         {
             Image.sprite = Data.Sprite;
@@ -61,18 +61,18 @@ public class Stone : MonoBehaviour
     private void OnMouseOver()
     {
         Outline.enabled = true;
-        canvas.sortingOrder = 9;
+        DescriptionCanvas.sortingOrder = 9;
         timer += Time.deltaTime;
         if(timer > HoverTime)
         {
-            Description.gameObject.SetActive(true);
+            DescriptionCanvas.gameObject.SetActive(true);
         }
     }
     private void OnMouseExit()
     {
         Outline.enabled = false;
-        Description.gameObject.SetActive(false);
-        canvas.sortingOrder = 0;
+        DescriptionCanvas.gameObject.SetActive(false);
+        DescriptionCanvas.sortingOrder = 0;
         timer = 0f;
     }
 
