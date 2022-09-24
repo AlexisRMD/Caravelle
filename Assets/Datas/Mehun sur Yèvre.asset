@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: "Mehun sur Y\xE8vre"
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  Sprite: {fileID: 21300000, guid: bdadb8bd1e2276c4495afca6b9f25a76, type: 3}
   Name: "Mehun sur Y\xE8vre"
-  Description: 
+  Description: 'Demeure favorite de Charles VII. '
   Type: 1

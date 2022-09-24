@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 0a4beed27f4b99c4db9ecd8c2c4027e9, type: 3}
   Name: Yolande d'Aragon
-  Description: 
+  Description: "Duchesse d\u2019Anjou et reine de Naples, elle fit tout pour prot\xE9ger
+    ses int\xE9r\xEAts et ceux de sa famille."
   Type: 0

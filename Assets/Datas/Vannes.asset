@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: Vannes
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  Sprite: {fileID: 21300000, guid: baa8a16fe83d7f448b6871b7125a5ea7, type: 3}
   Name: Vannes
-  Description: 
+  Description: "Capitale du duch\xE9 de Bretagne "
   Type: 1

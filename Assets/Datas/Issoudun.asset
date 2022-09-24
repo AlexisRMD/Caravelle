@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: Issoudun
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 67152f1ff58c1a8429cc8b5f70f1642e, type: 3}
+  Sprite: {fileID: 21300000, guid: 52867f174cb73ca4d8ee9ab1eb8fb685, type: 3}
   Name: Issoudun
   Description: "Dans le d\xE9partement de l\u2019Indre"
   Type: 1

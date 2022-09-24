@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: Alain Giron
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 67152f1ff58c1a8429cc8b5f70f1642e, type: 3}
+  Sprite: {fileID: 21300000, guid: 9fb0dc63d0142a24ab8c9535cc74f922, type: 3}
   Name: Alain Giron
-  Description: 
+  Description: "Capitaine breton, fid\xE8le au conn\xE9table"
   Type: 0

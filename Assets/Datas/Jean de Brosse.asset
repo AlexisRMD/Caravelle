@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: Jean de Brosse
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 67152f1ff58c1a8429cc8b5f70f1642e, type: 3}
+  Sprite: {fileID: 21300000, guid: 4ea16e61ae756c547ae379c212339528, type: 3}
   Name: Jean de Brosse
-  Description: 
+  Description: "Cousin de Louis de Culant et proche de Richemont, ses exploits lui
+    valurent la dignit\xE9 de mar\xE9chal. "
   Type: 0

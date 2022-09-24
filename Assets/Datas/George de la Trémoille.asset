@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 49133bf1a1722c14d8fbf4ad08b7471b, type: 3}
   Name: "George de la Tr\xE9moille"
-  Description: 
+  Description: "Noble originaire de Sully-sur-Loire, il accumula d\u2019immenses
+    richesses dont le roi d\xE9pendait."
   Type: 0

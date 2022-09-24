@@ -40,8 +40,16 @@ public class Stone : MonoBehaviour
             {
                 Image.preserveAspect = true;
             }
-            Name.text = Data.name;
+            Name.text = Data.Name;
             Description.text = Data.Description;
+        }
+    }
+
+    private void Update()
+    {
+        if (transform.position.y < -1)
+        {
+            transform.position = Zone.Instance.GetDropPosition();
         }
     }
 
