@@ -18,11 +18,17 @@ public abstract class Stone<T> : MonoBehaviour where T: StoneData
     public TMP_Text Description;
     public T Data;
 
+    [Header("Refs")]
+    public Outline Outline;
+    public Canvas canvas;
+
     public float HoverTime = 0.5f;
     public ListLinks links;
 
     private void Start()
     {
+        canvas.sortingOrder = 0;
+        Outline.enabled = false;
         Description.gameObject.SetActive(false);
         if (Data != null)
         {
@@ -51,6 +57,8 @@ public abstract class Stone<T> : MonoBehaviour where T: StoneData
 
     private void OnMouseOver()
     {
+        Outline.enabled = true;
+        canvas.sortingOrder = 9;
         timer += Time.deltaTime;
         if(timer > HoverTime)
         {
@@ -59,7 +67,9 @@ public abstract class Stone<T> : MonoBehaviour where T: StoneData
     }
     private void OnMouseExit()
     {
+        Outline.enabled = false;
         Description.gameObject.SetActive(false);
+        canvas.sortingOrder = 0;
         timer = 0f;
     }
 
