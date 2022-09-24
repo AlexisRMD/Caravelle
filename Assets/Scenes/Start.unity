@@ -377,6 +377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseDragPhysicsSpeed: 25
   mouseDragSpeed: 0.1
+  linkTemplate: {fileID: 0}
 --- !u!4 &1076913518
 Transform:
   m_ObjectHideFlags: 0
@@ -522,6 +523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc5c8c413d83034cbe0c4a24d49b88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSelected: 0
 --- !u!54 &1745976354
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -654,6 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc5c8c413d83034cbe0c4a24d49b88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSelected: 0
 --- !u!54 &1915758212
 Rigidbody:
   m_ObjectHideFlags: 0
