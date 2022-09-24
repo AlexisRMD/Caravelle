@@ -56,7 +56,7 @@ public class CameraBehavior : MonoBehaviour
     private void Zoom()
     {
         Vector3 newPosition = cam.transform.position;
-        newPosition += Vector3.up * (Time.deltaTime * zoomSensitivity) * -Input.mouseScrollDelta.y;
+        newPosition += (Time.deltaTime * zoomSensitivity) * -Input.mouseScrollDelta.y * Vector3.up;
         newPosition.y = Mathf.Clamp(newPosition.y, 3.0f, Bounds.y);
         cam.transform.position = newPosition;
     }

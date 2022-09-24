@@ -292,7 +292,6 @@ MonoBehaviour:
       pierre2: {fileID: 11400000, guid: d218797cb7fea1a4c8a07328ff32e178, type: 2}
     dropPierres:
     - {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
     - {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
     - {fileID: 11400000, guid: e36fe1334c4136f4e97652a3f1706008, type: 2}
     removePierres:
@@ -304,10 +303,8 @@ MonoBehaviour:
     connectPierres:
     - pierre1: {fileID: 11400000, guid: 6c95e50b3dabf6049b35675b570ad1da, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
+    - pierre1: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
-      pierre2: {fileID: 11400000, guid: e7bd1fea8f04fa147a05be744202fd03, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
@@ -323,10 +320,8 @@ MonoBehaviour:
     connectPierres:
     - pierre1: {fileID: 11400000, guid: 6c95e50b3dabf6049b35675b570ad1da, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
+    - pierre1: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
-      pierre2: {fileID: 11400000, guid: e7bd1fea8f04fa147a05be744202fd03, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
@@ -342,10 +337,8 @@ MonoBehaviour:
     connectPierres:
     - pierre1: {fileID: 11400000, guid: 6c95e50b3dabf6049b35675b570ad1da, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
+    - pierre1: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
-      pierre2: {fileID: 11400000, guid: e7bd1fea8f04fa147a05be744202fd03, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
@@ -361,10 +354,8 @@ MonoBehaviour:
     connectPierres:
     - pierre1: {fileID: 11400000, guid: 6c95e50b3dabf6049b35675b570ad1da, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
+    - pierre1: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
-      pierre2: {fileID: 11400000, guid: e7bd1fea8f04fa147a05be744202fd03, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
@@ -380,10 +371,8 @@ MonoBehaviour:
     connectPierres:
     - pierre1: {fileID: 11400000, guid: 6c95e50b3dabf6049b35675b570ad1da, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
+    - pierre1: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: ed4c78fcc98a5b143a738a0abff83210, type: 2}
-      pierre2: {fileID: 11400000, guid: e7bd1fea8f04fa147a05be744202fd03, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
@@ -439,7 +428,7 @@ MonoBehaviour:
       pierre2: {fileID: 11400000, guid: dad24df92fa941147873965fe8537032, type: 2}
     - pierre1: {fileID: 11400000, guid: f9a5ba36c89d1a842adaf74820b832fa, type: 2}
       pierre2: {fileID: 11400000, guid: dad24df92fa941147873965fe8537032, type: 2}
-    - pierre1: {fileID: 11400000, guid: f9a5ba36c89d1a842adaf74820b832fa, type: 2}
+    - pierre1: {fileID: 11400000, guid: 19f27843c85cf24429e6b1161e2f1e5d, type: 2}
       pierre2: {fileID: 11400000, guid: d01f619690155a64fb9abec87926e5f7, type: 2}
     dropPierres:
     - {fileID: 11400000, guid: e41b9df2e28810b44aa0c210d845e951, type: 2}
@@ -464,12 +453,8 @@ MonoBehaviour:
     isCheckpoint: 1
   - num: 24
     connectPierres:
-    - pierre1: {fileID: 11400000, guid: f9a5ba36c89d1a842adaf74820b832fa, type: 2}
+    - pierre1: {fileID: 11400000, guid: 37367b1833ab8c04cb07596a1a60b2ee, type: 2}
       pierre2: {fileID: 11400000, guid: e41b9df2e28810b44aa0c210d845e951, type: 2}
-    - pierre1: {fileID: 11400000, guid: e41b9df2e28810b44aa0c210d845e951, type: 2}
-      pierre2: {fileID: 11400000, guid: a18c8f3de5f83dd40b4cf252df0af249, type: 2}
-    - pierre1: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
-      pierre2: {fileID: 11400000, guid: a18c8f3de5f83dd40b4cf252df0af249, type: 2}
     dropPierres:
     - {fileID: 11400000, guid: 6cb1cedc57ec6214eb6dca30a4ae9be1, type: 2}
     - {fileID: 11400000, guid: c752a2d9fdbd8e946a9f3dfb3d62ed5e, type: 2}
@@ -489,8 +474,6 @@ MonoBehaviour:
       pierre2: {fileID: 11400000, guid: c752a2d9fdbd8e946a9f3dfb3d62ed5e, type: 2}
     dropPierres:
     - {fileID: 11400000, guid: f521ea5c0fdd3964d8e02d01684817f7, type: 2}
-    - {fileID: 11400000, guid: f6ad4227046838a4fa730cf1d77fe452, type: 2}
-    - {fileID: 11400000, guid: a667505b5ad76db41b6a9a90e7f408e2, type: 2}
     - {fileID: 11400000, guid: 442155c636eb6ff4aaf59b96f89cf1b5, type: 2}
     removePierres:
     - {fileID: 11400000, guid: dca658f8c913f604d8fe77e69ecd1652, type: 2}
@@ -506,13 +489,9 @@ MonoBehaviour:
     - pierre1: {fileID: 11400000, guid: f521ea5c0fdd3964d8e02d01684817f7, type: 2}
       pierre2: {fileID: 11400000, guid: c752a2d9fdbd8e946a9f3dfb3d62ed5e, type: 2}
     - pierre1: {fileID: 11400000, guid: f521ea5c0fdd3964d8e02d01684817f7, type: 2}
-      pierre2: {fileID: 11400000, guid: f6ad4227046838a4fa730cf1d77fe452, type: 2}
+      pierre2: {fileID: 11400000, guid: 442155c636eb6ff4aaf59b96f89cf1b5, type: 2}
     - pierre1: {fileID: 11400000, guid: f521ea5c0fdd3964d8e02d01684817f7, type: 2}
-      pierre2: {fileID: 11400000, guid: a667505b5ad76db41b6a9a90e7f408e2, type: 2}
-    - pierre1: {fileID: 11400000, guid: 442155c636eb6ff4aaf59b96f89cf1b5, type: 2}
-      pierre2: {fileID: 11400000, guid: a667505b5ad76db41b6a9a90e7f408e2, type: 2}
-    - pierre1: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
-      pierre2: {fileID: 11400000, guid: f6ad4227046838a4fa730cf1d77fe452, type: 2}
+      pierre2: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
     dropPierres: []
     removePierres:
     - {fileID: 11400000, guid: dca658f8c913f604d8fe77e69ecd1652, type: 2}
