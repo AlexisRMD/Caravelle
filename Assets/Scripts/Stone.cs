@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections.Generic;
 
 public enum StoneType
 {
@@ -18,6 +19,7 @@ public abstract class Stone<T> : MonoBehaviour where T: StoneData
     public T Data;
 
     public float HoverTime = 0.5f;
+    public ListLinks links;
 
     private void Start()
     {
@@ -39,7 +41,13 @@ public abstract class Stone<T> : MonoBehaviour where T: StoneData
     private void OnMouseDrag()
     {
         timer = 0f;
+
+        foreach (LineController link in links.Links())
+        {
+            link.UpdateLine();
+        }
     }
+
 
     private void OnMouseOver()
     {
@@ -54,4 +62,5 @@ public abstract class Stone<T> : MonoBehaviour where T: StoneData
         Description.gameObject.SetActive(false);
         timer = 0f;
     }
+
 }

@@ -9,7 +9,7 @@ public class SelectStone : MonoBehaviour
     [SerializeField] private GameObject linkTemplate;
 
     private GameObject objSelected = null;
-    private List<LineController> links = new();
+    private List<HashSet<GameObject>> links = new();
 
     private Camera mainCamera;
     private Vector3 velocity = Vector3.zero;
@@ -28,14 +28,15 @@ public class SelectStone : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject.CompareTag("Draggable"))
             {
                 objSelected = hit.collider.gameObject;
-                if (Input.GetMouseButtonDown(1))
+                if (Input.GetMouseButtonDown(1) && objSelected.TryGetComponent(out ListLinks _))
                 {
-                    LineController line = Instantiate(linkTemplate, objSelected.transform).GetComponent<LineController>();
+                    LineController line = Instantiate(linkTemplate).GetComponent<LineController>();
+                    line.startObject = objSelected;
                     StartCoroutine(LineUpdate(objSelected, line));
                 }
                 else if (Input.GetMouseButtonDown(0))
                 {
-                    hit.collider.gameObject.transform.position = new Vector3(hit.collider.gameObject.transform.position.x, 0.5f, hit.collider.gameObject.transform.position.z);
+                    hit.collider.gameObject.transform.position = new Vector3(hit.collider.gameObject.transform.position.x, 0.6f, hit.collider.gameObject.transform.position.z);
                     StartCoroutine(DragUpdate(objSelected));
                 }
             }
@@ -56,10 +57,6 @@ public class SelectStone : MonoBehaviour
             {
                 Vector3 direction = ray.GetPoint(initialDistance) - clickedObject.transform.position;
                 rb.velocity = direction * mouseDragPhysicsSpeed;
-                foreach (var link in links)
-                {
-                    link.UpdateLine();
-                }
                 yield return waitForFixedUpdate;
             }
             else
@@ -88,10 +85,19 @@ public class SelectStone : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.collider != null && hit.collider.gameObject.CompareTag("Draggable") && hit.collider.gameObject != clickedObject)
+            
+            if (hit.collider != null && hit.collider.gameObject.CompareTag("Draggable") && hit.collider.gameObject != clickedObject
+                && LinkNotAlreadyExist(hit.collider.gameObject, clickedObject))
             {
-                links.Add(line);
-                line.extremities[1] = hit.collider.gameObject.transform;
+                HashSet<GameObject> tempLink = new();
+                tempLink.Add(hit.collider.gameObject);
+                tempLink.Add(clickedObject);
+                links.Add(tempLink);
+
+                line.endObject = hit.collider.gameObject;
+                hit.collider.gameObject.GetComponent<ListLinks>().AddLinks(line);
+                clickedObject.GetComponent<ListLinks>().AddLinks(line);
+                line.FollowLine(hit.collider.gameObject.transform.position);
             }
             else
             {
@@ -102,5 +108,17 @@ public class SelectStone : MonoBehaviour
         {
             Destroy(line.gameObject);
         }
+    }
+
+    private bool LinkNotAlreadyExist(GameObject g1, GameObject g2)
+    {
+        foreach (HashSet<GameObject> allHash in links)
+        {
+            if (allHash.Contains(g1) && allHash.Contains(g2))
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

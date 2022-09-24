@@ -4,41 +4,42 @@ using UnityEngine;
 
 public class LineController : MonoBehaviour
 {
-    public Transform[] extremities = { null, null };
+    public GameObject startObject = null;
+    public GameObject endObject = null;
 
-    private LineRenderer lr;
-    private Vector3[] points = { Vector3.zero, Vector3.zero };
 
-    private void Awake()
-    {
-        lr = GetComponent<LineRenderer>();
-        extremities[0] = gameObject.transform;
-        points[0] = new Vector3(gameObject.transform.position.x, 0.4f, gameObject.transform.position.z);
-        points[1] = gameObject.transform.position;
-        lr.SetPositions(points);
-    }
-    private void Start()
-    {
-        /*
-        MeshCollider meshCollider = gameObject.AddComponent<MeshCollider>();
-        meshCollider.convex = true;
-        Mesh mesh = new Mesh();
-        lr.BakeMesh(mesh, true);
-        meshCollider.sharedMesh = mesh;
-        */
-    }
 
     public void FollowLine(Vector3 pos)
     {
-        points[1] = new Vector3(pos.x, 0.4f, pos.z);
-        lr.SetPositions(points);
+        Vector3 startPos = startObject.transform.position;
+        startPos.y = 0.25f;
+        pos.y = 0.25f;
+
+        float distance = Vector3.Distance(startPos, pos);
+        transform.localScale = new Vector3(transform.localScale.x, distance / 2, transform.localScale.z);
+
+        Vector3 middlePoint = (startPos + pos) / 2f;
+        transform.position = middlePoint;
+
+        transform.up = (pos - startPos); //rotation
     }
 
     public void UpdateLine()
     {
-        for (int i = 0; i < extremities.Length; i++)
-        {
-            lr.SetPosition(i, extremities[i].position);
-        }
+        Vector3 startPos = startObject.transform.position;
+        startPos.y = 0.25f;
+        Vector3 endPos = endObject.transform.position;
+        endPos.y = 0.25f;
+
+        float distance = Vector3.Distance(startPos, endPos);
+        transform.localScale = new Vector3(transform.localScale.x, distance / 2, transform.localScale.z);
+
+        Vector3 middlePoint = (startPos + endPos) / 2f;
+        transform.position = middlePoint;
+
+        transform.up = (endPos - startPos); //rotation
+
     }
+
+
 }
