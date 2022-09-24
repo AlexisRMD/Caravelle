@@ -91,10 +91,12 @@ public class SelectStone : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            
+            Debug.Log("this link doent' exist yet : " + LinkNotExist(hit.collider.gameObject, clickedObject));
+            Debug.Log((hit.collider != null) + " has a collider ; is drag : " + hit.collider.gameObject.CompareTag("Draggable"));
             if (hit.collider != null && hit.collider.gameObject.CompareTag("Draggable") && hit.collider.gameObject != clickedObject
                 && LinkNotExist(hit.collider.gameObject, clickedObject))
             {
+
                 HashSet<GameObject> tempLink = new();
                 tempLink.Add(hit.collider.gameObject);
                 tempLink.Add(clickedObject);
