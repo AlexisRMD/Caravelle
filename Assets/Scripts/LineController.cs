@@ -7,8 +7,6 @@ public class LineController : MonoBehaviour
     public GameObject startObject = null;
     public GameObject endObject = null;
 
-
-
     public void FollowLine(Vector3 pos)
     {
         Vector3 startPos = startObject.transform.position;
@@ -41,5 +39,14 @@ public class LineController : MonoBehaviour
 
     }
 
-
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            SelectStone.Instance.RemoveLink(startObject, endObject);
+            startObject.GetComponent<ListLinks>().RemoveLink(this);
+            endObject.GetComponent<ListLinks>().RemoveLink(this);
+            Destroy(gameObject);
+        }
+    }
 }

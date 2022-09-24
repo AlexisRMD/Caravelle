@@ -14,8 +14,11 @@ public class SelectStone : MonoBehaviour
     private Camera mainCamera;
     private Vector3 velocity = Vector3.zero;
     private WaitForFixedUpdate waitForFixedUpdate = new WaitForFixedUpdate();
+    [HideInInspector] public static SelectStone Instance;
+
     private void Awake()
     {
+        Instance = this;
         mainCamera = Camera.main;
     }
 
@@ -87,7 +90,7 @@ public class SelectStone : MonoBehaviour
         {
             
             if (hit.collider != null && hit.collider.gameObject.CompareTag("Draggable") && hit.collider.gameObject != clickedObject
-                && LinkNotAlreadyExist(hit.collider.gameObject, clickedObject))
+                && LinkNotExist(hit.collider.gameObject, clickedObject))
             {
                 HashSet<GameObject> tempLink = new();
                 tempLink.Add(hit.collider.gameObject);
@@ -110,7 +113,7 @@ public class SelectStone : MonoBehaviour
         }
     }
 
-    private bool LinkNotAlreadyExist(GameObject g1, GameObject g2)
+    private bool LinkNotExist(GameObject g1, GameObject g2)
     {
         foreach (HashSet<GameObject> allHash in links)
         {
@@ -120,5 +123,18 @@ public class SelectStone : MonoBehaviour
             }
         }
         return true;
+    }
+    public void RemoveLink(GameObject g1, GameObject g2)
+    {
+        if (LinkNotExist(g1, g2)) return;
+
+        foreach (HashSet<GameObject> allHash in links)
+        {
+            if (allHash.Contains(g1) && allHash.Contains(g2))
+            {
+                links.Remove(allHash);
+                return;
+            }
+        }
     }
 }
