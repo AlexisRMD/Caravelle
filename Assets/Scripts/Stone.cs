@@ -37,7 +37,7 @@ public class Stone : MonoBehaviour
             {
                 Image.preserveAspect = true;
             }
-            Name.text = Data.name;
+            Name.text = Data.Name;
             Description.text = Data.Description;
         }
     }
