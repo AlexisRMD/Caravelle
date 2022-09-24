@@ -9,7 +9,7 @@ public class SelectStone : MonoBehaviour
     [SerializeField] private GameObject linkTemplate;
 
     private GameObject objSelected = null;
-    private List<HashSet<GameObject>> links = new();
+    public List<HashSet<GameObject>> links = new();
 
     private Camera mainCamera;
     private Vector3 velocity = Vector3.zero;
@@ -100,7 +100,9 @@ public class SelectStone : MonoBehaviour
                 line.endObject = hit.collider.gameObject;
                 hit.collider.gameObject.GetComponent<ListLinks>().AddLinks(line);
                 clickedObject.GetComponent<ListLinks>().AddLinks(line);
-                line.FollowLine(hit.collider.gameObject.transform.position);
+                Tableau.Instance.VerifyLink(hit.collider.gameObject, clickedObject, line);
+
+                line.FollowLine(hit.collider.gameObject.transform.position); //replace link
             }
             else
             {

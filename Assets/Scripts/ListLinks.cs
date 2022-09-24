@@ -8,4 +8,5 @@ public class ListLinks : MonoBehaviour
     public List<LineController> Links() { return links; }
     public void AddLinks(LineController newLine) { links.Add(newLine); }
     public void RemoveLink(LineController newLine) { if(links.Contains(newLine)) links.Remove(newLine); }
+
 }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3988779533702980224}
   - component: {fileID: 3988779533702980227}
+  - component: {fileID: 6098455572872699529}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -46,3 +47,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseDragPhysicsSpeed: 25
   mouseDragSpeed: 0.1
+  linkTemplate: {fileID: 2051751836396562464, guid: 19f79ab384a5a2247ae804aa403cd9db, type: 3}
+--- !u!114 &6098455572872699529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3988779533702980226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe47656f5dd58054ead56b894e9e46ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  historic:
+  - connectPierres: []
+    dropPierres:
+    - {fileID: 11400000, guid: abc1bfc2d72e2cc40a2aa7eb491472dc, type: 2}
+    - {fileID: 11400000, guid: e026b61f59990b549b53d29fa90c3e33, type: 2}
+    - {fileID: 11400000, guid: b274eb55ed1e6364fb7134274c918267, type: 2}
+    - {fileID: 11400000, guid: 5489565bd2c87a2458d6186f868f4ab6, type: 2}
+    removePierres: []
+    hasBeenDrop: 0
+    isCheckpoint: 1
+  - connectPierres:
+    - pierre1: {fileID: 11400000, guid: abc1bfc2d72e2cc40a2aa7eb491472dc, type: 2}
+      pierre2: {fileID: 11400000, guid: e026b61f59990b549b53d29fa90c3e33, type: 2}
+    - pierre1: {fileID: 11400000, guid: abc1bfc2d72e2cc40a2aa7eb491472dc, type: 2}
+      pierre2: {fileID: 11400000, guid: b274eb55ed1e6364fb7134274c918267, type: 2}
+    dropPierres:
+    - {fileID: 11400000, guid: d9fe5d07c3d79a948ba601cb71255a1a, type: 2}
+    - {fileID: 11400000, guid: 6e67f11a4cbe6c44a97af9dfa7d4ca89, type: 2}
+    removePierres:
+    - {fileID: 11400000, guid: 5489565bd2c87a2458d6186f868f4ab6, type: 2}
+    hasBeenDrop: 0
+    isCheckpoint: 0
+  - connectPierres:
+    - pierre1: {fileID: 11400000, guid: d9fe5d07c3d79a948ba601cb71255a1a, type: 2}
+      pierre2: {fileID: 11400000, guid: e026b61f59990b549b53d29fa90c3e33, type: 2}
+    - pierre1: {fileID: 11400000, guid: 6e67f11a4cbe6c44a97af9dfa7d4ca89, type: 2}
+      pierre2: {fileID: 11400000, guid: b274eb55ed1e6364fb7134274c918267, type: 2}
+    dropPierres:
+    - {fileID: 11400000, guid: 28852770adb075b43a5dde7dea632b8d, type: 2}
+    - {fileID: 11400000, guid: 6e48848ebc6fd1e4f81623081ed9df82, type: 2}
+    removePierres: []
+    hasBeenDrop: 0
+    isCheckpoint: 1
