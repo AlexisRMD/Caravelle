@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01999437f6d69ae4c933fb101c352356, type: 3}
-  m_Name: Pierre II de Giac
+  m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
+  m_Name: Yolande d'Aragon
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 67152f1ff58c1a8429cc8b5f70f1642e, type: 3}
-  Name: Pierre II de Giac
-  Description: Un homme pas comme les autres
+  Name: Yolande d'Aragon
+  Description: 
+  Type: 0

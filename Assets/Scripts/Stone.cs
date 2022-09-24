@@ -10,13 +10,13 @@ public enum StoneType
     Concept,
     Action
 }
-public abstract class Stone<T> : MonoBehaviour where T: StoneData
+public class Stone : MonoBehaviour
 {
     public StoneType Type;
     public Image Image;
     public TMP_Text Name;
     public TMP_Text Description;
-    public T Data;
+    public StoneData Data;
 
     [Header("Refs")]
     public Outline Outline;

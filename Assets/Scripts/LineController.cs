@@ -49,4 +49,17 @@ public class LineController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
+    public IEnumerator ChangeColorValidate()
+    {
+        yield return new WaitForSecondsRealtime(0.4f);
+
+        Color initialColor = gameObject.GetComponent<MeshRenderer>().material.color;
+        for (float i = 0; i < 1; i+=0.1f)
+        {
+            gameObject.GetComponent<MeshRenderer>().material.color = Color.Lerp(initialColor, Color.yellow, i);
+            yield return new WaitForFixedUpdate();
+        }
+    }
 }

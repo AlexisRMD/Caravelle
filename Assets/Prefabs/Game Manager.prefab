@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseDragPhysicsSpeed: 25
   mouseDragSpeed: 0.1
+  linkTemplate: {fileID: 2051751836396562464, guid: 19f79ab384a5a2247ae804aa403cd9db, type: 3}
