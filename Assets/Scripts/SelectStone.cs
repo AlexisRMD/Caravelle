@@ -28,9 +28,9 @@ public class SelectStone : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.collider != null && hit.collider.gameObject.CompareTag("Draggable"))
+            if (hit.collider != null && hit.collider.attachedRigidbody != null && hit.collider.attachedRigidbody.gameObject.CompareTag("Draggable"))
             {
-                objSelected = hit.collider.gameObject;
+                objSelected = hit.collider.attachedRigidbody.gameObject;
                 if (Input.GetMouseButtonDown(1) && objSelected.TryGetComponent(out ListLinks _))
                 {
                     LineController line = Instantiate(linkTemplate).GetComponent<LineController>();
@@ -39,7 +39,7 @@ public class SelectStone : MonoBehaviour
                 }
                 else if (Input.GetMouseButtonDown(0))
                 {
-                    hit.collider.gameObject.transform.position = new Vector3(hit.collider.gameObject.transform.position.x, 0.6f, hit.collider.gameObject.transform.position.z);
+                    hit.collider.attachedRigidbody.gameObject.transform.position = new Vector3(hit.collider.attachedRigidbody.gameObject.transform.position.x, 0.6f, hit.collider.attachedRigidbody.gameObject.transform.position.z);
                     StartCoroutine(DragUpdate(objSelected));
                 }
             }

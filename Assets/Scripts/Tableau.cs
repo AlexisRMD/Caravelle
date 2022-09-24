@@ -31,19 +31,19 @@ public class Tableau : MonoBehaviour
         switch (data.Type)
         {
             case StoneType.Character:
-                newStone = Instantiate(StoneCharacter);
+                newStone = Instantiate(StoneCharacter, Zone.Instance.GetDropPosition(),StoneCharacter.transform.rotation);
                 break;
 
             case StoneType.Location:
-                newStone = Instantiate(StoneLocation);
+                newStone = Instantiate(StoneLocation, Zone.Instance.GetDropPosition(), StoneLocation.transform.rotation);
                 break;
 
             case StoneType.Concept:
-                newStone = Instantiate(StoneConcept);
+                newStone = Instantiate(StoneConcept, Zone.Instance.GetDropPosition(), StoneConcept.transform.rotation);
                 break;
 
             case StoneType.Action:
-                newStone = Instantiate(StoneAction);
+                newStone = Instantiate(StoneAction, Zone.Instance.GetDropPosition(), StoneAction.transform.rotation);
                 break;
 
             default:

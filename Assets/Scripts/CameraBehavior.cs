@@ -9,6 +9,7 @@ public class CameraBehavior : MonoBehaviour
     public float movingSensitivity = 10f;
     public float zoomSensitivity = 10f;
     public Vector3 Bounds;
+    public DialogueData dd;
 
     private void Start()
     {
@@ -18,6 +19,10 @@ public class CameraBehavior : MonoBehaviour
     {
         Move();
         Zoom();
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            StartCoroutine(Dialogue.Instance.StartDialogue(dd));
+        }
 
     }
 
@@ -53,7 +58,7 @@ public class CameraBehavior : MonoBehaviour
     {
         Vector3 newPosition = cam.transform.position;
         newPosition += Vector3.up * (Time.deltaTime * zoomSensitivity) * -Input.mouseScrollDelta.y;
-        newPosition.y = Mathf.Clamp(newPosition.y, -Bounds.y, Bounds.y);
+        newPosition.y = Mathf.Clamp(newPosition.y, 3.0f, Bounds.y);
         cam.transform.position = newPosition;
     }
 }
