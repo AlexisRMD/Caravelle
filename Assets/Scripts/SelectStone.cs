@@ -37,7 +37,7 @@ public class SelectStone : MonoBehaviour
     {
         float initialDistance = Vector3.Distance(clickedObject.transform.position, mainCamera.transform.position);
         clickedObject.TryGetComponent<Rigidbody>(out var rb);
-        if (rb != null) rb.freezeRotation = true; rb.constraints = RigidbodyConstraints.FreezePositionY;
+        if (rb != null) rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
         while (Input.GetMouseButton(0))
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
