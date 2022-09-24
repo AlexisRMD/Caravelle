@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 2654979088478846065}
   - component: {fileID: 395295771}
   - component: {fileID: 395295772}
+  - component: {fileID: 5253118291101755805}
   m_Layer: 0
   m_Name: Stone - Location
   m_TagString: Draggable
@@ -318,6 +319,20 @@ MonoBehaviour:
   DescriptionCanvas: {fileID: 1318249459134604661}
   HoverTime: 0.5
   links: {fileID: 2654979088478846065}
+  rotationInit: {x: 0, y: 0, z: 0, w: 0}
+--- !u!65 &5253118291101755805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991336496021502315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.04, y: 0.2, z: 2.86}
+  m_Center: {x: 0, y: 0.09, z: 0}
 --- !u!1 &7888597353087981110
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,42 +1005,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c568d1021b27c441850c0c92314db4f, type: 3}
---- !u!1 &508231211061471555 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: 6c568d1021b27c441850c0c92314db4f, type: 3}
-  m_PrefabInstance: {fileID: 9213214821594605907}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1288520406092972069
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508231211061471555}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.5841436, y: 3.7658794, z: 0.17076015}
-  m_Center: {x: -0.009923756, y: 0.013774872, z: 0.10937834}
---- !u!1 &8383320538994481975 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 6c568d1021b27c441850c0c92314db4f, type: 3}
-  m_PrefabInstance: {fileID: 9213214821594605907}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &6409068015265576333
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8383320538994481975}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.033979, y: 2.8478434, z: 0.10317542}
-  m_Center: {x: 0.0031350804, y: -0.0074327025, z: 0.051587403}
 --- !u!4 &8669802482970382008 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6c568d1021b27c441850c0c92314db4f, type: 3}
