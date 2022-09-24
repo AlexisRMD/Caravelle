@@ -24,9 +24,12 @@ public class Stone : MonoBehaviour
 
     public float HoverTime = 0.5f;
     public ListLinks links;
+    [HideInInspector] public Quaternion rotationInit;
 
     private void Start()
     {
+        rotationInit = gameObject.transform.rotation;
+
         canvas.sortingOrder = 0;
         Outline.enabled = false;
         Description.gameObject.SetActive(false);

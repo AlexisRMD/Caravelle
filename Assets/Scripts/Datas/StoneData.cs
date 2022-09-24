@@ -10,7 +10,7 @@ public class StoneData : ScriptableObject
 
     public bool Equals(StoneData obj)
     {
-        if (Name == obj.Name && Description == obj.Description) return true;
+        if (Name == obj.Name) return true;
         return false;
     }
 }

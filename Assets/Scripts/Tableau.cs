@@ -18,11 +18,7 @@ public class Tableau : MonoBehaviour
     }
     private void Start()
     {
-        foreach (StoneData item in historic[0].dropPierres)
-        {
-            CreateStone(item);
-        }
-        historic[0].hasBeenDrop = true;
+        DropItem(historic[0]);
     }
 
     private GameObject CreateStone(StoneData data)
@@ -53,6 +49,19 @@ public class Tableau : MonoBehaviour
         return newStone;
     }
 
+    private void DropItem(Drop step)
+    {
+        foreach (StoneData item in step.dropPierres)
+        {//create new stones
+            CreateStone(item);
+        }
+        foreach (StoneData item in step.removePierres)
+        {//remove stones
+            SelectStone.Instance.RemoveStone(item);
+        }
+        step.hasBeenDrop = true;
+    }
+
     public void VerifyLink(GameObject g1, GameObject g2, LineController linkObj)
     {
         StoneData s1 = g1.GetComponent<Stone>().Data;
@@ -76,7 +85,18 @@ public class Tableau : MonoBehaviour
 
             StartCoroutine(linkObj.ChangeColorValidate());
 
+            bool allLinked = true;
+            foreach(Lien item in link.connectPierres)
+            {
+                if (!SelectStone.Instance.LinkExist(item.pierre1, item.pierre2))
+                { //there is not all links
+                    allLinked = false;
+                    break;
+                }
+            }
+            if (!allLinked) break;
 
+            DropItem(link);
 
             break;
         }
@@ -98,6 +118,7 @@ public class Lien
 [System.Serializable]
 public class Drop
 {
+    public int num;
     public List<Lien> connectPierres = new();
     public List<StoneData> dropPierres = new();
     public List<StoneData> removePierres = new();

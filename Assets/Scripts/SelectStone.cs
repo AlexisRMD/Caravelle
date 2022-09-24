@@ -21,7 +21,6 @@ public class SelectStone : MonoBehaviour
         Instance = this;
         mainCamera = Camera.main;
     }
-
     private void Update()
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -52,6 +51,10 @@ public class SelectStone : MonoBehaviour
         float initialDistance = Vector3.Distance(clickedObject.transform.position, mainCamera.transform.position);
         clickedObject.TryGetComponent<Rigidbody>(out var rb);
         if (rb != null) rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
+        if (clickedObject.TryGetComponent<Stone>(out Stone st)) clickedObject.transform.rotation = st.rotationInit;
+        else clickedObject.transform.rotation = Quaternion.identity;
+
+
         while (Input.GetMouseButton(0))
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -126,6 +129,23 @@ public class SelectStone : MonoBehaviour
         }
         return true;
     }
+
+    public bool LinkExist(StoneData s1, StoneData s2)
+    {
+        foreach (HashSet<GameObject> allHash in links)
+        {
+            List<StoneData> tempStoneList = new();
+            foreach (GameObject stone in allHash)
+            {
+                tempStoneList.Add(stone.GetComponent<Stone>().Data);
+            }
+            if ((tempStoneList[0].Equals(s1) && tempStoneList[1].Equals(s2))
+                || (tempStoneList[0].Equals(s2) && tempStoneList[1].Equals(s1))) 
+                return true;
+        }
+        return false;
+    }
+
     public void RemoveLink(GameObject g1, GameObject g2)
     {
         if (LinkNotExist(g1, g2)) return;
@@ -135,6 +155,20 @@ public class SelectStone : MonoBehaviour
             if (allHash.Contains(g1) && allHash.Contains(g2))
             {
                 links.Remove(allHash);
+                return;
+            }
+        }
+    }
+
+    public void RemoveStone(StoneData data)
+    {
+        Stone[] foundStones = FindObjectsOfType<Stone>();
+        foreach (Stone item in foundStones)
+        {
+            if (item.Data.Equals(data))
+            {//item is the gameobject to remove
+                item.links.RemoveAllLinks();
+                Destroy(item.gameObject);
                 return;
             }
         }
