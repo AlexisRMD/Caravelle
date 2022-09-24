@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 769f1b4e381985541b1f0ab2c9a6e72f, type: 3}
   Name: Charles VII
-  Description: 
+  Description: "Roi dont la l\xE9gitimit\xE9 est contest\xE9e suite au Trait\xE9
+    de Troyes."
   Type: 0

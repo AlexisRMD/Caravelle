@@ -45,6 +45,14 @@ public class Stone : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (transform.position.y < -1)
+        {
+            transform.position = Zone.Instance.GetDropPosition();
+        }
+    }
+
 
     private float timer = 0f;
     private void OnMouseDrag()

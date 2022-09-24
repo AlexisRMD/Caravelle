@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: Jean de Foix
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 67152f1ff58c1a8429cc8b5f70f1642e, type: 3}
+  Sprite: {fileID: 21300000, guid: 260c5a734cf6d5443962e7adc52ccad0, type: 3}
   Name: Jean de Foix
-  Description: 
+  Description: "Comte de Foix, il est charg\xE9 de la gouvernance du Languedoc. Il
+    est connu pour sa prudence. Sa femme, Jeanne d\u2019Albret, est la s\u0153ur
+    de Charles d\u2019Albret. "
   Type: 0

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: Bourges
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  Sprite: {fileID: 21300000, guid: 34c972a02fafc204ea0ad599217cc1fb, type: 3}
   Name: Bourges
-  Description: 
+  Description: "Capitale du duch\xE9 de Berry, Charles VII en fit son lieu de r\xE9sidence
+    principal."
   Type: 1

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: Sully-sur-Loire
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  Sprite: {fileID: 21300000, guid: 24f5a2c570d04d74d834bf8ff37e2609, type: 3}
   Name: Sully-sur-Loire
-  Description: 
+  Description: "Principale seigneurie de Georges de La Tr\xE9moille, situ\xE9e pr\xE8s
+    de la zone de conflit entre forces anglo-bourguignonnes et fran\xE7aises. "
   Type: 1
