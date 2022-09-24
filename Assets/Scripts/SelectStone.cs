@@ -7,6 +7,7 @@ public class SelectStone : MonoBehaviour
     [SerializeField] private float mouseDragPhysicsSpeed = 10;
     [SerializeField] private float mouseDragSpeed = 0.1f;
     [SerializeField] private GameObject linkTemplate;
+    [SerializeField] private TMPro.TMP_Text textRemain;
 
     private GameObject objSelected = null;
     public List<HashSet<GameObject>> links = new();
@@ -91,8 +92,6 @@ public class SelectStone : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            Debug.Log("this link doent' exist yet : " + LinkNotExist(hit.collider.gameObject, clickedObject));
-            Debug.Log((hit.collider != null) + " has a collider ; is drag : " + hit.collider.gameObject.CompareTag("Draggable"));
             if (hit.collider != null && hit.collider.gameObject.CompareTag("Draggable") && hit.collider.gameObject != clickedObject
                 && LinkNotExist(hit.collider.gameObject, clickedObject))
             {
@@ -139,7 +138,15 @@ public class SelectStone : MonoBehaviour
             List<StoneData> tempStoneList = new();
             foreach (GameObject stone in allHash)
             {
-                tempStoneList.Add(stone.GetComponent<Stone>().Data);
+                try
+                {
+                    tempStoneList.Add(stone.GetComponent<Stone>().Data);
+                }catch(MissingReferenceException e)
+                {
+                    Debug.LogWarning("Stone removed : " + e.Message);
+                    links.Remove(allHash);
+                    break;
+                }
             }
             if ((tempStoneList[0].Equals(s1) && tempStoneList[1].Equals(s2))
                 || (tempStoneList[0].Equals(s2) && tempStoneList[1].Equals(s1))) 
@@ -175,4 +182,37 @@ public class SelectStone : MonoBehaviour
             }
         }
     }
+
+
+
+    public void SetTextLinksRemaining(int nbr)
+    {
+        if (nbr > 1) textRemain.text = "Il reste " + nbr + " connexions.";
+        else if (nbr == 1) textRemain.text = "Il reste 1 connexion.";
+        else textRemain.text = " ";
+    }
+
+    public IEnumerator CameraShake()
+    {
+        Vector3 initialPos = mainCamera.transform.position;
+        yield return null;
+        for (int i = 0; i < 2; i++)
+        {
+            mainCamera.transform.Translate(Vector3.right*0.05f);
+            yield return waitForFixedUpdate;
+        }
+        for (int i = 0; i < 4; i++)
+        {
+            mainCamera.transform.Translate(Vector3.left * 0.05f);
+            yield return waitForFixedUpdate;
+        }
+        for (int i = 0; i < 2; i++)
+        {
+
+            mainCamera.transform.Translate(Vector3.right * 0.05f);
+            yield return waitForFixedUpdate;
+        }
+        mainCamera.transform.position = initialPos;
+    }
+
 }

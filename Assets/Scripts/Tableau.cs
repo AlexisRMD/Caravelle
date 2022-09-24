@@ -12,6 +12,10 @@ public class Tableau : MonoBehaviour
     public GameObject StoneAction;
     public GameObject StoneConcept;
 
+    [HideInInspector] public int linksRemaining;
+    private int errors = 0;
+    private int actualStage = 1;
+
     private void Awake()
     {
         Instance = this;
@@ -70,6 +74,7 @@ public class Tableau : MonoBehaviour
             {
                 historic[num].hasBeenDrop = true;
             }
+            actualStage = 19;
         }
     }
 
@@ -77,10 +82,11 @@ public class Tableau : MonoBehaviour
     {
         StoneData s1 = g1.GetComponent<Stone>().Data;
         StoneData s2 = g2.GetComponent<Stone>().Data;
+        bool thisLinkExist = false;
         foreach (Drop link in historic)
         {
             if (link.hasBeenDrop) continue;
-            bool thisLinkExist = false;
+            thisLinkExist = false;
             foreach (Lien item in link.connectPierres)
             {
                 if (item.Contains(s1, s2))
@@ -89,7 +95,8 @@ public class Tableau : MonoBehaviour
                     break;
                 }
             }
-            if (!thisLinkExist) continue; //TO DO : not good :( +1 error
+
+            if (!thisLinkExist) continue;
 
             //this link is a good link, verify if other links are not also linked
             //if so, drop new stones, and remove if needed
@@ -97,19 +104,75 @@ public class Tableau : MonoBehaviour
             StartCoroutine(linkObj.ChangeColorValidate());
 
             bool allLinked = true;
-            foreach(Lien item in link.connectPierres)
+            linksRemaining = 0;
+            foreach (Lien item in link.connectPierres)
             {
                 if (!SelectStone.Instance.LinkExist(item.pierre1, item.pierre2))
                 { //there is not all links
                     allLinked = false;
-                    break;
+                    linksRemaining++;
                 }
             }
+            if (linksRemaining == 0 & link.num + 1 != historic.Count) linksRemaining = historic[link.num + 1].connectPierres.Count;
+            SelectStone.Instance.SetTextLinksRemaining(linksRemaining);
             if (!allLinked) break;
 
             DropItem(link);
+            if(historic[link.num + 1].isCheckpoint) errors = 0;
+            actualStage++;
 
             break;
+        }
+
+        if (!thisLinkExist) {
+            //not good :( +1 error + screenshake + remove link
+            StartCoroutine(SelectStone.Instance.CameraShake());
+            errors++;
+            SelectStone.Instance.RemoveLink(g1, g2);
+            linkObj.startObject.GetComponent<ListLinks>().RemoveLink(linkObj);
+            linkObj.endObject.GetComponent<ListLinks>().RemoveLink(linkObj);
+            Destroy(linkObj.gameObject);
+
+            if (errors >= 3) {
+                ReturnCheckpoint(actualStage);
+                errors = 0;
+            }
+        }
+    }
+
+    private void ReturnCheckpoint(int returnStage)
+    {
+        if (returnStage < 0) return;
+
+        if (!historic[returnStage].isCheckpoint)
+        {
+            HashSet<int> sameStep = new HashSet<int>();
+            sameStep.Add(16); sameStep.Add(17); sameStep.Add(18); sameStep.Add(19);
+            if (sameStep.Contains(returnStage))
+            {
+                actualStage = 15;
+                return;
+            }
+
+            returnStage--;
+            foreach (StoneData item in historic[returnStage].removePierres)
+            {//create new stones
+                CreateStone(item);
+            }
+            foreach (StoneData item in historic[returnStage].dropPierres)
+            {//remove stones
+                SelectStone.Instance.RemoveStone(item);
+            }
+            historic[returnStage].hasBeenDrop = false;
+            ReturnCheckpoint(returnStage);
+        }
+        else
+        {
+            foreach (StoneData item in historic[returnStage - 1].dropPierres)
+            {//remove links
+                SelectStone.Instance.RemoveStone(item);
+                CreateStone(item);
+            }
         }
     }
 }

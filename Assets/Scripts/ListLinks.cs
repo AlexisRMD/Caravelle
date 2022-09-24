@@ -12,6 +12,7 @@ public class ListLinks : MonoBehaviour
     {
         foreach (LineController line in links)
         {
+            SelectStone.Instance.RemoveLink(line.startObject, line.endObject);
             if (line.startObject != gameObject) line.startObject.GetComponent<ListLinks>().RemoveLink(line);
             else if (line.endObject != gameObject) line.endObject.GetComponent<ListLinks>().RemoveLink(line);
             Destroy(line.gameObject);
