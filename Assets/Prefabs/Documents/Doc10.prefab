@@ -27,8 +27,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2636473743689759045}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.02029}
+  m_LocalScale: {x: 0.025, y: 0.025, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7535385001006694534}
@@ -37,8 +37,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.02017, y: -0}
+  m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7811669872464675746
 Canvas:
@@ -134,10 +134,10 @@ RectTransform:
   m_Father: {fileID: 1353673964355083817}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.79999924, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2690221520682207553
 CanvasRenderer:
@@ -171,13 +171,13 @@ MonoBehaviour:
     propre plusieurs sommes d\u2019or et d\u2019argents appartenant au roi nostre
     sire. Je confesse estre cause du trespassement de noble dame Jeanne de Nailhac,
     feu ma compagne, alors portant notre enfant. Je m\u2019oppose toutefois aux accusations
-    d\u2019estre amis des Angloys, ennemis du roi nostre sire, ne d\u2019avoir conclu
-    d\xE9shonorable alliance avec monseigneur de Bourgongne. Acceptant la sentence
-    choisie par mes pairs, je demande que me soit ot\xE9e par messire le bourreau
-    du roi nostre sire ma dextre main, laquelle autrefois je vendis au Malin."
+    d\u2019estre amis des Angloys, ennemis du roi nostre sire, .  ne d\u2019avoir
+    conclu d\xE9shonorable alliance avec monseigneur de Bourgongne. Acceptant la
+    sentence choisie par mes pairs, je demande que me soit ot\xE9e par messire le
+    bourreau du roi nostre sire ma dextre main, laquelle autrefois je vendis au Malin."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
+  m_sharedMaterial: {fileID: 6805872390976006843, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -201,8 +201,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.036
-  m_fontSizeBase: 0.036
+  m_fontSize: 1.5
+  m_fontSizeBase: 1.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0.75
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 36.07
+  m_lineSpacing: 25
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.12882304, y: 0.056835264, z: 0.08658767, w: 0.025901973}
+  m_margin: {x: 1.8200653, y: 1.8975412, z: 2.9193609, w: 2.4823992}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -271,8 +271,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6591946879449687095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 22}
-  m_LocalScale: {x: 10.5637, y: 0.1, z: 11.784993}
+  m_LocalPosition: {x: 0, y: 1, z: 19}
+  m_LocalScale: {x: 14.463818, y: 0.1, z: 17.004566}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1353673964355083817}
@@ -340,7 +340,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6591946879449687099
 Rigidbody:
@@ -357,4 +357,4 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
