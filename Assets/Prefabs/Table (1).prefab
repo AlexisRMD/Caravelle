@@ -44,7 +44,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 60, y: 10, z: 60}
-  m_Center: {x: 0, y: 30, z: 0}
+  m_Center: {x: 0, y: 60, z: 0}
 --- !u!1 &932087241743607087
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20.5, y: 60, z: 30}
+  m_Size: {x: 20.5, y: 140, z: 30}
   m_Center: {x: -25.5, y: 0, z: 0}
 --- !u!1 &7271500952989354039
 GameObject:
@@ -443,7 +443,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20.5, y: 60, z: 30}
+  m_Size: {x: 20.5, y: 140, z: 30}
   m_Center: {x: 25.5, y: 0, z: 0}
 --- !u!1 &7271500953725529918
 GameObject:
@@ -488,8 +488,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 60, y: 60, z: 20}
-  m_Center: {x: 0, y: 0, z: 25}
+  m_Size: {x: 60, y: 140, z: 20}
+  m_Center: {x: 0, y: 0, z: 21}
 --- !u!1 &7271500953730175829
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +533,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 60, y: 60, z: 20}
+  m_Size: {x: 60, y: 140, z: 20}
   m_Center: {x: 0, y: 0, z: -20}
 --- !u!1 &7271500954087220472
 GameObject:
@@ -797,7 +797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8834115744145384886}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
   m_LocalScale: {x: 64.70519, y: 64.70519, z: 64.70519}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -821,7 +821,7 @@ MeshRenderer:
   m_GameObject: {fileID: 8834115744145384886}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
