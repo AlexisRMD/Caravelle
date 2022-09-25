@@ -23,6 +23,7 @@ public class Tableau : MonoBehaviour
     public GameObject Doc8;
     public GameObject Doc9;
     public GameObject Doc10;
+    private Dictionary<int, GameObject> docs = new();
 
     [HideInInspector] public int linksRemaining;
     private int errors = 0;
@@ -34,6 +35,16 @@ public class Tableau : MonoBehaviour
     }
     private void Start()
     {
+        docs.Add(1, Doc1);
+        docs.Add(2, Doc2);
+        docs.Add(3, Doc3);
+        docs.Add(4, Doc4);
+        docs.Add(5, Doc5);
+        docs.Add(6, Doc6);
+        docs.Add(7, Doc7);
+        docs.Add(8, Doc8);
+        docs.Add(9, Doc9);
+        docs.Add(10, Doc10);
         DropItem(historic[0]);
     }
 
@@ -76,6 +87,12 @@ public class Tableau : MonoBehaviour
             SelectStone.Instance.RemoveStone(item);
         }
         step.hasBeenDrop = true;
+
+        if (step.doc > -1 && !step.docIsPlaced)
+        {
+            Instantiate(docs[step.doc]);
+            step.docIsPlaced = true;
+        }
 
         //alternative connexions
         HashSet<int> sameStep = new HashSet<int>();
@@ -210,4 +227,6 @@ public class Drop
     public List<StoneData> removePierres = new();
     public bool hasBeenDrop = false;
     public bool isCheckpoint;
+    public int doc = -1;
+    [HideInInspector] public bool docIsPlaced = false;
 }
