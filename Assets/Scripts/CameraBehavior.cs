@@ -25,9 +25,9 @@ public class CameraBehavior : MonoBehaviour
     }
     private void Update()
     {
+        if (!CanMove) return;
         Move();
         Zoom();
-
     }
 
     private Ray ray;
@@ -45,8 +45,6 @@ public class CameraBehavior : MonoBehaviour
 
     private void Move()
     {
-        if (!CanMove) return;
-
         if (Input.GetMouseButtonDown(2))
         {
             startPos = GetWorldPosition();

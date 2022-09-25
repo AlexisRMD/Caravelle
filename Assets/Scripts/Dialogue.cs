@@ -34,6 +34,7 @@ public class Dialogue : MonoBehaviour
         {
             gameObject.SetActive(true);
             CameraBehavior.Instance.CanMove = false;
+            SelectStone.Instance.CanSelect = false;
             DialogueIndex = 0;
             yield return StartCoroutine(FadeLight(NormalColor, FadedColor));
             yield return StartCoroutine(ShowDialogue(dd));
@@ -66,6 +67,7 @@ public class Dialogue : MonoBehaviour
     private void EndDialogue()
     {
         CameraBehavior.Instance.CanMove = true;
+        SelectStone.Instance.CanSelect = true;
         gameObject.SetActive(false);
     }
 

@@ -17,6 +17,8 @@ public class SelectStone : MonoBehaviour
     private WaitForFixedUpdate waitForFixedUpdate = new WaitForFixedUpdate();
     [HideInInspector] public static SelectStone Instance;
 
+    public bool CanSelect = true;
+
     private void Awake()
     {
         Instance = this;
@@ -24,6 +26,7 @@ public class SelectStone : MonoBehaviour
     }
     private void Update()
     {
+        if (!CanSelect) return;
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))

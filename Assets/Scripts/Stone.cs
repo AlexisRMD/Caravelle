@@ -8,7 +8,8 @@ public enum StoneType
     Character,
     Location,
     Concept,
-    Action
+    Action,
+    Conseil
 }
 public class Stone : MonoBehaviour
 {
