@@ -343,6 +343,7 @@ GameObject:
   - component: {fileID: 3542440861458656041}
   - component: {fileID: 3542440861458656042}
   - component: {fileID: 13597148}
+  - component: {fileID: 6769514975440245901}
   m_Layer: 0
   m_Name: Stone - Character
   m_TagString: Draggable
@@ -452,6 +453,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7387706064836869012, guid: 7e3a988bb925aa742adf28d925eced48, type: 3}
+--- !u!65 &6769514975440245901
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3542440861458654426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4, y: 1.4, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0.27}
 --- !u!1 &3578411151292901171
 GameObject:
   m_ObjectHideFlags: 0

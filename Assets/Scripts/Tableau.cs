@@ -113,6 +113,7 @@ public class Tableau : MonoBehaviour
         {
             StartCoroutine(Dialogue.Instance.StartDialogue(dialogues[step.dialogue]));
         }
+        AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.newStone);
 
         //alternative connexions
         HashSet<int> sameStep = new HashSet<int>();

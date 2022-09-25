@@ -41,6 +41,17 @@ public class AudioPlay : MonoBehaviour
         StartCoroutine(PlayMusicAsync(music));
     }
 
+    public void TraceLine()
+    {
+        audioSourceFx.clip = traceLink;
+        audioSourceFx.Play();
+    }
+    public void StopLine()
+    {
+        if(audioSourceFx.clip == traceLink)
+            audioSourceFx.Stop();
+    }
+
     private IEnumerator PlayMusicAsync(AudioClip music)
     {
         if (audioSourceMusique.isPlaying)
