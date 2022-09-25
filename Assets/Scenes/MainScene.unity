@@ -413,6 +413,14 @@ PrefabInstance:
       propertyPath: StoneConseil
       value: 
       objectReference: {fileID: 1501350409667710929, guid: f4ae7a14af2280b4694215ea06bbec81, type: 3}
+    - target: {fileID: 6098455572872699529, guid: 581e465c307920a48a157056ded01e4c, type: 3}
+      propertyPath: historic.Array.data[3].dropPierres.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098455572872699529, guid: 581e465c307920a48a157056ded01e4c, type: 3}
+      propertyPath: historic.Array.data[3].dropPierres.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 19719dc2847ab9641b9b813c768e9cdf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 581e465c307920a48a157056ded01e4c, type: 3}
 --- !u!1 &762618083
