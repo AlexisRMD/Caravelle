@@ -17,6 +17,8 @@ public class Dialogue : MonoBehaviour
     public float TextFadedAlpha = 0f;
     public float TimeToFadeText = 0.5f;
 
+    public DialogueData higherVolumeDialogue;
+
     public int DialogueIndex;
 
     public static Dialogue Instance;
@@ -32,6 +34,14 @@ public class Dialogue : MonoBehaviour
     {
         if (dd.Sentences.Count > 0)
         {
+            if(dd == higherVolumeDialogue)
+            {
+                AudioPlay.Instance.audioSourceFx.volume = 0.75f;
+            }
+            else
+            {
+                AudioPlay.Instance.audioSourceFx.volume = 0.5f;
+            }
             if(dd.dialogueSound != null) AudioPlay.Instance.PlayOneShot(dd.dialogueSound);
             gameObject.SetActive(true);
             CameraBehavior.Instance.CanMove = false;

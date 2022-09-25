@@ -77,7 +77,7 @@ public class AudioPlay : MonoBehaviour
     public static AudioPlay Instance;
     private void Awake()
     {
-        if (AudioPlay.Instance != null) return;
+        if (AudioPlay.Instance != null) Destroy(gameObject);
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
