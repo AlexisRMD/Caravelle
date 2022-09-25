@@ -10,6 +10,8 @@ public class AudioPlay : MonoBehaviour
     public AudioSource audioSourceMusique;
 
     [Header("Sound References")]
+    public AudioClip music1;
+    public AudioClip music2;
     public AudioClip swipBoard;
     public AudioClip checkpoint;
     public AudioClip no;

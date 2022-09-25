@@ -120,19 +120,30 @@ public class Tableau : MonoBehaviour
         {
             StartCoroutine(Dialogue.Instance.StartDialogue(dialogues[step.dialogue]));
             step.dialogueHasBeenSaid = true;
+            if (step.num == 14) AudioPlay.Instance.PlayMusic(AudioPlay.Instance.music2);
         }
         AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.newStone);
 
         //alternative connexions
         HashSet<int> sameStep = new HashSet<int>();
-        sameStep.Add(15); sameStep.Add(16); sameStep.Add(17); sameStep.Add(18); sameStep.Add(19);
+        sameStep.Add(16); sameStep.Add(17);
         if (sameStep.Contains(step.num))
         {
             foreach (var num in sameStep)
             {
                 historic[num].hasBeenDrop = true;
             }
-            actualStage = 19;
+            actualStage = 17;
+        }
+        sameStep.Clear();
+        sameStep.Add(8); sameStep.Add(9);
+        if (sameStep.Contains(step.num))
+        {
+            foreach (var num in sameStep)
+            {
+                historic[num].hasBeenDrop = true;
+            }
+            actualStage = 9;
         }
     }
 
@@ -161,7 +172,7 @@ public class Tableau : MonoBehaviour
             //this link is a good link, verify if other links are not also linked
             //if so, drop new stones, and remove if needed
 
-            StartCoroutine(linkObj.ChangeColorValidate());
+            Coroutine yellow = StartCoroutine(linkObj.ChangeColorValidate(Color.yellow));
 
             bool allLinked = true;
             linksRemaining = 0;
@@ -178,6 +189,14 @@ public class Tableau : MonoBehaviour
             if (!allLinked) break;
 
             DropItem(link);
+
+            StopCoroutine(yellow);
+            LineController[] foundStones = FindObjectsOfType<LineController>();
+            foreach (LineController st in foundStones)
+            {
+                st.gameObject.GetComponent<MeshRenderer>().material.color = Color.grey;
+            }
+
             if (historic[link.num].isCheckpoint)
             {
                 errors = 0;
@@ -213,11 +232,14 @@ public class Tableau : MonoBehaviour
 
         if (!historic[returnStage].isCheckpoint)
         {
-            HashSet<int> sameStep = new HashSet<int>();
-            sameStep.Add(16); sameStep.Add(17); sameStep.Add(18); sameStep.Add(19);
-            if (sameStep.Contains(returnStage))
+            if (returnStage==17)
             {
-                actualStage = 15;
+                actualStage = 16;
+                return;
+            }
+            if (returnStage == 9)
+            {
+                actualStage = 8;
                 return;
             }
 

@@ -200,8 +200,8 @@ public class SelectStone : MonoBehaviour
 
     public void SetTextLinksRemaining(int nbr)
     {
-        if (nbr > 1) textRemain.text = "Il reste " + nbr + " connexions.";
-        else if (nbr == 1) textRemain.text = "Il reste 1 connexion.";
+        if (nbr > 1) textRemain.text = "Encore " + nbr + " liens à établir.";
+        else if (nbr == 1) textRemain.text = "Encore 1 lien à établir.";
         else textRemain.text = " ";
     }
 

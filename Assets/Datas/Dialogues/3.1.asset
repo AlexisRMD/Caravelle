@@ -18,3 +18,4 @@ MonoBehaviour:
   - "J\u2019en fais partie depuis de nombreuses ann\xE9es. Sa composition est tr\xE8s
     mouvante, rassemblant les principaux officiers de la Couronne, les membres de
     la famille royale et les conseillers du roi."
+  dialogueSound: {fileID: 8300000, guid: 3316283fffd8ced40a60a333e5d7fc4e, type: 3}

@@ -22,3 +22,4 @@ MonoBehaviour:
   - "Esp\xE9rons pour lui que son innocence le prot\xE8ge, j\u2019ai ou\xEF dire
     que le conn\xE9table n\u2019en avait pas fini avec lui. Je ferai ce que je peux
     pour prot\xE9ger la couronne."
+  dialogueSound: {fileID: 8300000, guid: 1e8654d892009354e86faa5260823abf, type: 3}

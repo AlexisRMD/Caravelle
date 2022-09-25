@@ -48,6 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSourceFx: {fileID: 1036289814570162638}
   audioSourceMusique: {fileID: 8583927324577026333}
+  music1: {fileID: 8300000, guid: 8531190657bcefc47946d628c570099e, type: 3}
+  music2: {fileID: 8300000, guid: c6b705cdb63ff64438505bc1604225f4, type: 3}
   swipBoard: {fileID: 8300000, guid: 68f9620486e32ab4a922b650c0717d6c, type: 3}
   checkpoint: {fileID: 8300000, guid: addfeefd36cace0468a208f8966bf3f5, type: 3}
   no: {fileID: 8300000, guid: 6aadd1457ddf14b45b97183915dc381e, type: 3}
