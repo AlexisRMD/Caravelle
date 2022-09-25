@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: "Interrogatoire muscl\xE9"
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 67152f1ff58c1a8429cc8b5f70f1642e, type: 3}
+  Sprite: {fileID: 21300000, guid: 5c999b8672e37ec4886a97b64edbe2fe, type: 3}
   Name: "Interrogatoire muscl\xE9"
   Description: 
   Type: 2
