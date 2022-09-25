@@ -86,7 +86,6 @@ public class AudioPlay : MonoBehaviour
         audioSourceMusique.loop = true;
     }
 
-
     public void NoMusic(Toggle toggle)
     {
         EnableMusic(toggle.isOn);

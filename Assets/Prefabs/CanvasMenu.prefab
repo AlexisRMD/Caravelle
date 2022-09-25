@@ -644,7 +644,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pour le roy
+  m_text: 'Pour le Roy ?
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
   m_sharedMaterial: {fileID: 6805872390976006843, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
@@ -1317,7 +1319,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<size=120%><i>Pour le roy</i></size>\n\n<b>Rapha\xEBl Carbonne</b>\n<size=80%>Doctorant
+  m_text: "<size=120%><i>Pour le Roy ?</i></size>\n\n<b>Rapha\xEBl Carbonne</b>\n<size=80%>Doctorant
     \xE0 CY Cergy-Paris Universit\xE9, UMR 9022 H\xE9ritages</size>\n<b>Ulysse Chenut</b>\n<size=80%>Game
     designer, producer, co graphiste</size>\n<b>Akarius</b>\n<size=80%>Sound Designer</size>\n<b>Mandarine
     Holfgrane / Nicolas Tagot</b>\n<size=80%>Graphiste</size>\n<b>Alexis R\xE9mond</b>\n<size=80%>D\xE9veloppeur</size>\n<b>Anne-Sophie

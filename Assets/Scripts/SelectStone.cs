@@ -190,7 +190,7 @@ public class SelectStone : MonoBehaviour
             if (item.Data.Equals(data))
             {//item is the gameobject to remove
                 item.links.RemoveAllLinks();
-                Destroy(item.gameObject);
+                StartCoroutine(item.RemoveIt());
                 return;
             }
         }

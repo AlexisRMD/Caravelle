@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using System.Collections;
 
 public enum StoneType
 {
@@ -44,6 +45,17 @@ public class Stone : MonoBehaviour
             Name.text = Data.Name;
             Description.text = Data.Description;
         }
+    }
+
+    public IEnumerator RemoveIt()
+    {
+        Vector3 initScale = gameObject.transform.localScale;
+        for (float i = 0; i < 1; i+=0.1f)
+        {
+            gameObject.transform.localScale -= Vector3.one * 0.1f ;
+            yield return new WaitForEndOfFrame();
+        }
+        Destroy(gameObject);
     }
 
     private void Update()
