@@ -214,6 +214,7 @@ public class Tableau : MonoBehaviour
         }
         else
         {
+            if (returnStage == 0) returnStage++;
             foreach (StoneData item in historic[returnStage - 1].dropPierres)
             {//remove links
                 SelectStone.Instance.RemoveStone(item);

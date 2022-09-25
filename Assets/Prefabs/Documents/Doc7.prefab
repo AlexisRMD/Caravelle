@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2403179747102646405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12, y: 1, z: 20}
-  m_LocalScale: {x: 7, y: 0.1, z: 5.514135}
+  m_LocalScale: {x: 9.1952, y: 0.1, z: 7.8036036}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7560335075560446619}
@@ -188,7 +188,7 @@ MonoBehaviour:
     sire de La Tr\xE9moille qu\u2019il s\u2019en partist bientost ou qu\u2019il auroit
     grand desplaisir ! Ne souhaitant en rester l\xE0, le sire de La Tr\xE9moille
     partit s\u2019enqu\xE9rir aupr\xE8s de messire le connestable et de son fr\xE8re
-    pour agir"
+    pour agir."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -215,11 +215,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.034
-  m_fontSizeBase: 0.034
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.75
+  m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.1236417, y: 0, z: 0.07575688, w: 0}
+  m_margin: {x: 0.1236417, y: 0.037812382, z: 0.07575688, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

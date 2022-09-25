@@ -51,13 +51,6 @@ public class Stone : MonoBehaviour
         {
             transform.position = Zone.Instance.GetDropPosition();
         }
-    }
-
-
-    private float timer = 0f;
-    private void OnMouseDrag()
-    {
-        timer = 0f;
 
         foreach (LineController link in links.Links())
         {
@@ -66,12 +59,20 @@ public class Stone : MonoBehaviour
     }
 
 
+    private float timer = 0f;
+    private void OnMouseDrag()
+    {
+        timer = 0f;
+    }
+
+
     private void OnMouseOver()
     {
+        Debug.Log("on " + Name);
         Outline.enabled = true;
         DescriptionCanvas.sortingOrder = 9;
         timer += Time.deltaTime;
-        if(timer > HoverTime)
+        if(timer > HoverTime && Data.Description != "")
         {
             DescriptionCanvas.gameObject.SetActive(true);
         }

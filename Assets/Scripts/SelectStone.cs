@@ -49,15 +49,14 @@ public class SelectStone : MonoBehaviour
 
     private IEnumerator DragUpdate(GameObject clickedObject)
     {
-        float initialDistance = Vector3.Distance(clickedObject.transform.position, mainCamera.transform.position);
         clickedObject.TryGetComponent<Rigidbody>(out var rb);
         if (rb != null) rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
-        if (clickedObject.TryGetComponent<Stone>(out Stone st)) clickedObject.transform.rotation = st.rotationInit;
+        if (clickedObject.TryGetComponent(out Stone st)) clickedObject.transform.rotation = st.rotationInit;
         else clickedObject.transform.rotation = Quaternion.identity;
-
 
         while (Input.GetMouseButton(0))
         {
+            float initialDistance = Vector3.Distance(clickedObject.transform.position, mainCamera.transform.position);
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
             if (rb != null)
@@ -81,11 +80,17 @@ public class SelectStone : MonoBehaviour
     private IEnumerator LineUpdate(GameObject clickedObject, LineController line)
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        Plane hPlane = new Plane(Vector3.up, Vector3.up*line.posY);
+        float distance;
+
         while (Input.GetMouseButton(1))
         {
-            float initialDistance = Vector3.Distance(clickedObject.transform.position, mainCamera.transform.position);
             ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-            line.FollowLine(ray.GetPoint(initialDistance));
+            if (hPlane.Raycast(ray, out distance))
+            {
+                line.FollowLine(ray.GetPoint(distance));
+            }
+
             yield return waitForFixedUpdate;
         }
 

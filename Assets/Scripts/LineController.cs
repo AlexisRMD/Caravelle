@@ -7,7 +7,7 @@ public class LineController : MonoBehaviour
     public GameObject startObject = null;
     public GameObject endObject = null;
 
-    private float posY = 0.05f;
+    [HideInInspector] public float posY = -.2f;
 
     public void FollowLine(Vector3 pos)
     {
