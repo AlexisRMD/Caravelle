@@ -340,7 +340,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 8
-    dialogue: 3
+    dialogue: -1
     docIsPlaced: 0
     dialogueHasBeenSaid: 0
   - num: 14
@@ -379,7 +379,6 @@ MonoBehaviour:
     dropPierres:
     - {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
     - {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
-    - {fileID: 11400000, guid: e36fe1334c4136f4e97652a3f1706008, type: 2}
     removePierres:
     - {fileID: 11400000, guid: b78e27160ddf9df4ab4344ac826786de, type: 2}
     - {fileID: 11400000, guid: ea2c91e0db8be504289b35300f22383b, type: 2}
@@ -403,6 +402,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 19f27843c85cf24429e6b1161e2f1e5d, type: 2}
     - {fileID: 11400000, guid: 003aa604a0d24e34f917c241d10e1955, type: 2}
     - {fileID: 11400000, guid: 22588e36795374f49aa2baf43b27b10c, type: 2}
+    - {fileID: 11400000, guid: e36fe1334c4136f4e97652a3f1706008, type: 2}
     removePierres: []
     hasBeenDrop: 0
     isCheckpoint: 1
@@ -430,6 +430,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 19f27843c85cf24429e6b1161e2f1e5d, type: 2}
     - {fileID: 11400000, guid: 003aa604a0d24e34f917c241d10e1955, type: 2}
     - {fileID: 11400000, guid: 22588e36795374f49aa2baf43b27b10c, type: 2}
+    - {fileID: 11400000, guid: e36fe1334c4136f4e97652a3f1706008, type: 2}
     removePierres: []
     hasBeenDrop: 0
     isCheckpoint: 0
