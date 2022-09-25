@@ -135,6 +135,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 2b94cbc7e00f2c2499b73ad2b0e90291, type: 2}
     removePierres:
     - {fileID: 11400000, guid: 9aecbd658fd596c41b633c793f5e59d3, type: 2}
+    - {fileID: 11400000, guid: c54defc2195658e40b25d949d285cbbe, type: 2}
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 3
@@ -603,6 +604,7 @@ MonoBehaviour:
   Doc9: {fileID: 4427328489146271377, guid: 9673e233373322047975a0d5c0f12da4, type: 3}
   Doc10: {fileID: 6591946879449687095, guid: 379c278ee1b16ee41bcc3b7e46e3e569, type: 3}
   DocControles: {fileID: 7146057437096046331, guid: e4fd6e87641c85b46b69e638f44da7a7, type: 3}
+  DocMap: {fileID: 2137938053138566096, guid: 0411ff9142e0b23449e74db690a56a4e, type: 3}
   Introduction: {fileID: 11400000, guid: 003c1b17e9ea0784daf178dda5ec3f41, type: 2}
   ThreeOne: {fileID: 11400000, guid: ee4ffb9e4d3e24140ae5e7a20ef822eb, type: 2}
   FourOne: {fileID: 11400000, guid: 3f7b45ee36374ba43ba0e75c8ffcdbe3, type: 2}

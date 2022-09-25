@@ -24,6 +24,7 @@ public class Tableau : MonoBehaviour
     public GameObject Doc9;
     public GameObject Doc10;
     public GameObject DocControles;
+    public GameObject DocMap;
     private Dictionary<int, GameObject> docs = new();
     [Header("References Dialogue")]
     public DialogueData Introduction;
@@ -54,12 +55,14 @@ public class Tableau : MonoBehaviour
         docs.Add(9, Doc9);
         docs.Add(10, Doc10);
         docs.Add(11, DocControles);
+        docs.Add(12, DocMap);
         dialogues.Add(1, ThreeOne);
         dialogues.Add(2, FourOne);
         dialogues.Add(3, SixOne);
         dialogues.Add(4, Epilogue);
         DropItem(historic[0]);
         Instantiate(docs[11]);
+        Instantiate(docs[12]);
         StartCoroutine(Dialogue.Instance.StartDialogue(Introduction));
     }
 
