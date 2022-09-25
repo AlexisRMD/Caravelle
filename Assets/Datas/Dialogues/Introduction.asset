@@ -21,3 +21,4 @@ MonoBehaviour:
     de ce drame."
   - "Vous avez ma confiance, mais agissez bri\xE8vement et secr\xE8tement. La situation
     politique est des plus complexes et nous courrons au d\xE9sastre\_!"
+  dialogueSound: {fileID: 8300000, guid: 5e999518b0c975e41913aef7d16fcdac, type: 3}

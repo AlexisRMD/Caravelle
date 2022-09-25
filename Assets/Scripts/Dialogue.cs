@@ -31,6 +31,7 @@ public class Dialogue : MonoBehaviour
     {
         if (dd.Sentences.Count > 0)
         {
+            if(dd.dialogueSound != null) AudioPlay.Instance.PlayOneShot(dd.dialogueSound);
             gameObject.SetActive(true);
             DialogueIndex = 0;
             yield return StartCoroutine(FadeLight(LightNormalIntensity, LightFadedIntensity));

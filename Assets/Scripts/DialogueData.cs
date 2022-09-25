@@ -6,4 +6,5 @@ using UnityEngine;
 public class DialogueData : ScriptableObject
 {
     public List<string> Sentences;
+    public AudioClip dialogueSound;
 }
