@@ -113,7 +113,7 @@ public class Tableau : MonoBehaviour
         {
             StartCoroutine(Dialogue.Instance.StartDialogue(dialogues[step.dialogue]));
             step.dialogueHasBeenSaid = true;
-            if (step.num == 13) AudioPlay.Instance.PlayMusic(AudioPlay.Instance.music2);
+            if (step.num == 14) AudioPlay.Instance.PlayMusic(AudioPlay.Instance.music2);
         }
         AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.newStone);
 

@@ -119,7 +119,7 @@ MonoBehaviour:
     dropPierres:
     - {fileID: 11400000, guid: 240881637583347418fb4d443d4583e6, type: 2}
     - {fileID: 11400000, guid: 9aecbd658fd596c41b633c793f5e59d3, type: 2}
-    - {fileID: 11400000, guid: f25ddfe7b0e14b344be1dfbb3c11862f, type: 2}
+    - {fileID: 11400000, guid: c54defc2195658e40b25d949d285cbbe, type: 2}
     - {fileID: 11400000, guid: 19719dc2847ab9641b9b813c768e9cdf, type: 2}
     removePierres:
     - {fileID: 11400000, guid: 20df02955814ee546807d34773a103ec, type: 2}
