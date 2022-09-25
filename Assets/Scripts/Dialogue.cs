@@ -36,7 +36,7 @@ public class Dialogue : MonoBehaviour
         {
             if(dd == higherVolumeDialogue)
             {
-                AudioPlay.Instance.audioSourceFx.volume = 0.75f;
+                AudioPlay.Instance.audioSourceFx.volume = 0.9f;
             }
             else
             {
