@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: f9aea508e40139a4198cf27231dd27d4, type: 3}
   Name: Jean de Lancastre
-  Description: 
+  Description: "R\xE9gent du royaume de France au nom d\u2019Henry VI d\u2019Angleterre,
+    il est plus connu sous son titre de duc de Bedford. "
   Type: 0

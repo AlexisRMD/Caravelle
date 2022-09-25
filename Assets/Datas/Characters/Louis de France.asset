@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 769f1b4e381985541b1f0ab2c9a6e72f, type: 3}
   Name: Louis de France
-  Description: 
+  Description: "H\xE9ritier de la couronne, il est n\xE9 le 3 juillet 1423 \xE0 Bourges."
   Type: 0
