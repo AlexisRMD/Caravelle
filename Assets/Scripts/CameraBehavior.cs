@@ -11,6 +11,14 @@ public class CameraBehavior : MonoBehaviour
     public Vector3 Bounds;
     public DialogueData dd;
 
+    public bool CanMove = true;
+    public static CameraBehavior Instance; 
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Start()
     {
         cam = GetComponent<Camera>();
@@ -19,14 +27,36 @@ public class CameraBehavior : MonoBehaviour
     {
         Move();
         Zoom();
-        if (Input.GetKeyDown(KeyCode.A))
+
+    }
+
+    private Ray ray;
+    private RaycastHit hitInfo;
+    private Vector3 startPos;
+    private Vector3 GetWorldPosition()
+    {
+        ray = cam.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hitInfo, 999f))
         {
-            StartCoroutine(Dialogue.Instance.StartDialogue(dd));
+            return hitInfo.point;
         }
+        return Vector3.zero;
     }
 
     private void Move()
     {
+        if (!CanMove) return;
+
+        if (Input.GetMouseButtonDown(2))
+        {
+            startPos = GetWorldPosition();
+        }
+        if (Input.GetMouseButton(2))
+        {
+            Vector3 direction = startPos - GetWorldPosition();
+            transform.position += direction;
+        }
+
         Vector3 newPosition = cam.transform.position;
         //Top
         if (Input.mousePosition.y >= Screen.height * 0.95 || Input.GetKey(KeyCode.Z) || (Input.GetMouseButton(2) && Input.GetAxis("Mouse Y") < 0))

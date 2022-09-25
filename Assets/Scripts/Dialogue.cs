@@ -33,6 +33,7 @@ public class Dialogue : MonoBehaviour
         if (dd.Sentences.Count > 0)
         {
             gameObject.SetActive(true);
+            CameraBehavior.Instance.CanMove = false;
             DialogueIndex = 0;
             yield return StartCoroutine(FadeLight(NormalColor, FadedColor));
             yield return StartCoroutine(ShowDialogue(dd));
@@ -64,6 +65,7 @@ public class Dialogue : MonoBehaviour
 
     private void EndDialogue()
     {
+        CameraBehavior.Instance.CanMove = true;
         gameObject.SetActive(false);
     }
 
