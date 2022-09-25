@@ -129,7 +129,7 @@ public class Tableau : MonoBehaviour
             StartCoroutine(Dialogue.Instance.StartDialogue(dialogues[step.dialogue]));
             step.dialogueHasBeenSaid = true;
             if (step.num == 14) AudioPlay.Instance.PlayMusic(AudioPlay.Instance.music2);
-            if (step.num == 24) ReturnToMainMenuBtn.gameObject.SetActive(true);
+            if (step.num == 28) ReturnToMainMenuBtn.gameObject.SetActive(true);
         }
         AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.newStone);
 
