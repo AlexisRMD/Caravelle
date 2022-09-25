@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tableau : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class Tableau : MonoBehaviour
     public DialogueData Epilogue;
     private Dictionary<int, DialogueData> dialogues = new();
 
+    public Button ReturnToMainMenuBtn;
+    
     [HideInInspector] public int linksRemaining;
     private int errors = 0;
     private int actualStage = 1;
@@ -45,6 +48,7 @@ public class Tableau : MonoBehaviour
     }
     private void Start()
     {
+        ReturnToMainMenuBtn.gameObject.SetActive(false);
         docs.Add(1, Doc1);
         docs.Add(2, Doc2);
         docs.Add(3, Doc3);
@@ -121,6 +125,7 @@ public class Tableau : MonoBehaviour
             StartCoroutine(Dialogue.Instance.StartDialogue(dialogues[step.dialogue]));
             step.dialogueHasBeenSaid = true;
             if (step.num == 14) AudioPlay.Instance.PlayMusic(AudioPlay.Instance.music2);
+            if (step.num == 24) ReturnToMainMenuBtn.gameObject.SetActive(true);
         }
         AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.newStone);
 
