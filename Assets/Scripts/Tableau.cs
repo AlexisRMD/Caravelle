@@ -14,6 +14,7 @@ public class Tableau : MonoBehaviour
     public GameObject StoneAction;
     public GameObject StoneConcept;
     public GameObject StoneConseil;
+    public GameObject StoneSmallConcept;
     [Header("References Documents")]
     public GameObject Doc1;
     public GameObject Doc2;
@@ -93,6 +94,9 @@ public class Tableau : MonoBehaviour
                 break;
             case StoneType.Conseil:
                 newStone = Instantiate(StoneConseil, Zone.Instance.GetDropPosition(), StoneConseil.transform.rotation);
+                break;
+            case StoneType.SmallConcept:
+                newStone = Instantiate(StoneSmallConcept, Zone.Instance.GetDropPosition(), StoneSmallConcept.transform.rotation);
                 break;
 
             default:

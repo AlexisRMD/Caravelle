@@ -1157,6 +1157,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2634746505725824530, guid: 1ec8826b4f039594eb2e2e886ae3ebbd, type: 3}
+      propertyPath: higherVolumeDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: a8b117a3c0aedca4ba672b01cd4106b0, type: 2}
     - target: {fileID: 2634746505725824531, guid: 1ec8826b4f039594eb2e2e886ae3ebbd, type: 3}
       propertyPath: m_Name
       value: Dialogue Canvas
