@@ -49,6 +49,7 @@ MonoBehaviour:
   mouseDragSpeed: 0.1
   linkTemplate: {fileID: 2051751836396562464, guid: 19f79ab384a5a2247ae804aa403cd9db, type: 3}
   textRemain: {fileID: 0}
+  CanSelect: 1
 --- !u!114 &6098455572872699529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,6 +140,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 2b94cbc7e00f2c2499b73ad2b0e90291, type: 2}
     removePierres:
     - {fileID: 11400000, guid: 9aecbd658fd596c41b633c793f5e59d3, type: 2}
+    - {fileID: 11400000, guid: c54defc2195658e40b25d949d285cbbe, type: 2}
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 3
@@ -280,7 +282,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
-    dialogue: -1
+    dialogue: 2
     docIsPlaced: 0
     dialogueHasBeenSaid: 0
   - num: 11
@@ -338,7 +340,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 8
-    dialogue: -1
+    dialogue: 3
     docIsPlaced: 0
     dialogueHasBeenSaid: 0
   - num: 14
@@ -591,6 +593,7 @@ MonoBehaviour:
   StoneLocation: {fileID: 6991336496021502315, guid: 61048f0054b53114496867d086833c94, type: 3}
   StoneAction: {fileID: 6991336496021502315, guid: 3483751993df9d84092785943986e53c, type: 3}
   StoneConcept: {fileID: 3542440861458654426, guid: e458b008712cc9f4fbf6669e317177b1, type: 3}
+  StoneConseil: {fileID: 1501350409667710929, guid: f4ae7a14af2280b4694215ea06bbec81, type: 3}
   Doc1: {fileID: 1337677000656861619, guid: 09e5188cd41aea84b8b4ce353cebcbc1, type: 3}
   Doc2: {fileID: 3400619179918354786, guid: dda2e303dce5cc1468a4bb5333087bb4, type: 3}
   Doc3: {fileID: 4326716463750432679, guid: 98b3d275800d4dc4e9ce1e19fd18434f, type: 3}
@@ -602,6 +605,7 @@ MonoBehaviour:
   Doc9: {fileID: 4427328489146271377, guid: 9673e233373322047975a0d5c0f12da4, type: 3}
   Doc10: {fileID: 6591946879449687095, guid: 379c278ee1b16ee41bcc3b7e46e3e569, type: 3}
   DocControles: {fileID: 7146057437096046331, guid: e4fd6e87641c85b46b69e638f44da7a7, type: 3}
+  DocMap: {fileID: 2137938053138566096, guid: 0411ff9142e0b23449e74db690a56a4e, type: 3}
   Introduction: {fileID: 11400000, guid: 003c1b17e9ea0784daf178dda5ec3f41, type: 2}
   ThreeOne: {fileID: 11400000, guid: ee4ffb9e4d3e24140ae5e7a20ef822eb, type: 2}
   FourOne: {fileID: 11400000, guid: 3f7b45ee36374ba43ba0e75c8ffcdbe3, type: 2}

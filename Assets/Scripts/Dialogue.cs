@@ -1,13 +1,14 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
     [Header("Effect")]
-    public Light AmbientLight;
-    public float LightNormalIntensity = 1f;
-    public float LightFadedIntensity = 0.5f;
+    public Image FadeImage;
+    public Color NormalColor;
+    public Color FadedColor;
     public float TimeToFadeLight = 0.5f;
 
     [Header("Dialogue")]
@@ -33,8 +34,10 @@ public class Dialogue : MonoBehaviour
         {
             if(dd.dialogueSound != null) AudioPlay.Instance.PlayOneShot(dd.dialogueSound);
             gameObject.SetActive(true);
+            CameraBehavior.Instance.CanMove = false;
+            SelectStone.Instance.CanSelect = false;
             DialogueIndex = 0;
-            yield return StartCoroutine(FadeLight(LightNormalIntensity, LightFadedIntensity));
+            yield return StartCoroutine(FadeLight(NormalColor, FadedColor));
             yield return StartCoroutine(ShowDialogue(dd));
             bool end = false;
             while(!end)
@@ -57,13 +60,15 @@ public class Dialogue : MonoBehaviour
                 
                 yield return null;
             }
-            yield return StartCoroutine(FadeLight(LightFadedIntensity, LightNormalIntensity));
+            yield return StartCoroutine(FadeLight(FadedColor, NormalColor));
             EndDialogue();
         }
     }
 
     private void EndDialogue()
     {
+        CameraBehavior.Instance.CanMove = true;
+        SelectStone.Instance.CanSelect = true;
         gameObject.SetActive(false);
     }
 
@@ -78,14 +83,15 @@ public class Dialogue : MonoBehaviour
         yield return StartCoroutine(FadeDialogue(TextNormalAlpha, TextFadedAlpha));
     }
 
-    private IEnumerator FadeLight(float from, float to)
+    private IEnumerator FadeLight(Color from, Color to)
     {
         float timeElapsed = 0f;
 
         while (timeElapsed < TimeToFadeLight)
         {
             timeElapsed += Time.deltaTime;
-            AmbientLight.intensity = Mathf.Lerp(from, to, timeElapsed / TimeToFadeLight);
+            Color newColor = Color.Lerp(from, to, timeElapsed / TimeToFadeLight);
+            FadeImage.color = newColor;
             yield return null;
         }
     }

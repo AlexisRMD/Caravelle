@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: Ennemi
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 34b9ebb75e3c7314aa259cd62b8e1558, type: 3}
   Name: Ennemi
   Description: 
   Type: 2
