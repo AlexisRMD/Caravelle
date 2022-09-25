@@ -19,10 +19,6 @@ public class CameraBehavior : MonoBehaviour
     {
         Move();
         Zoom();
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            StartCoroutine(Dialogue.Instance.StartDialogue(dd));
-        }
     }
 
     private void Move()
