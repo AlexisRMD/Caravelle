@@ -165,7 +165,7 @@ public class Tableau : MonoBehaviour
             //this link is a good link, verify if other links are not also linked
             //if so, drop new stones, and remove if needed
 
-            StartCoroutine(linkObj.ChangeColorValidate());
+            Coroutine yellow = StartCoroutine(linkObj.ChangeColorValidate(Color.yellow));
 
             bool allLinked = true;
             linksRemaining = 0;
@@ -182,6 +182,14 @@ public class Tableau : MonoBehaviour
             if (!allLinked) break;
 
             DropItem(link);
+
+            StopCoroutine(yellow);
+            LineController[] foundStones = FindObjectsOfType<LineController>();
+            foreach (LineController st in foundStones)
+            {
+                st.gameObject.GetComponent<MeshRenderer>().material.color = Color.grey;
+            }
+
             if (historic[link.num].isCheckpoint)
             {
                 errors = 0;

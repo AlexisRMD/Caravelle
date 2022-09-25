@@ -43,7 +43,7 @@ public class LineController : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && gameObject.GetComponent<MeshRenderer>().material.color != Color.grey)
         {
             SelectStone.Instance.RemoveLink(startObject, endObject);
             startObject.GetComponent<ListLinks>().RemoveLink(this);
@@ -53,14 +53,14 @@ public class LineController : MonoBehaviour
     }
 
 
-    public IEnumerator ChangeColorValidate()
+    public IEnumerator ChangeColorValidate(Color newColor)
     {
         yield return new WaitForSecondsRealtime(0.4f);
 
         Color initialColor = gameObject.GetComponent<MeshRenderer>().material.color;
         for (float i = 0; i < 1; i+=0.2f)
         {
-            gameObject.GetComponent<MeshRenderer>().material.color = Color.Lerp(initialColor, Color.yellow, i);
+            gameObject.GetComponent<MeshRenderer>().material.color = Color.Lerp(initialColor, newColor, i);
             yield return new WaitForFixedUpdate();
         }
     }
