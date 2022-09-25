@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2842523812727759040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23, y: 1, z: 31}
-  m_LocalScale: {x: 5.724592, y: 0.1, z: 7.791787}
+  m_LocalPosition: {x: 21.5, y: 1, z: 29}
+  m_LocalScale: {x: 8.579816, y: 0.1, z: 7.981625}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7980615855433685726}
@@ -150,8 +150,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -1.026}
+  m_SizeDelta: {x: 0, y: -2.053}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6439152005653073334
 CanvasRenderer:
@@ -187,8 +187,8 @@ MonoBehaviour:
     amer qui m\u2019occit et cueurt seure,\r\nSe de vous n\u2019ay reconfort sans
     demeure.\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
+  m_sharedMaterial: {fileID: 6805872390976006843, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -212,13 +212,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.7
-  m_fontSizeBase: 1.7
+  m_fontSize: 1.72
+  m_fontSizeBase: 1.72
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0.75
   m_fontSizeMax: 72
-  m_fontStyle: 2
+  m_fontStyle: 3
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 5.0596957, y: 6.63074, z: 2.4482782, w: 0}
+  m_margin: {x: 5.8827634, y: 5.8514814, z: 2.4482782, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -281,8 +281,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6385895899337883058}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00208}
-  m_LocalScale: {x: 0.025, y: 0.025, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00314}
+  m_LocalScale: {x: 0.025, y: 0.02, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1484763054953612401}
@@ -292,8 +292,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0121, y: 0.9}
-  m_SizeDelta: {x: 38.1184, y: 36.536}
+  m_AnchoredPosition: {x: -0.03261, y: 0.9}
+  m_SizeDelta: {x: 39.75895, y: 46.164}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1180295798073395029
 Canvas:
@@ -381,17 +381,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8521080989884035285}
-  m_LocalRotation: {x: -0, y: -0, z: 0.038717095, w: 0.9992503}
+  m_LocalRotation: {x: 0, y: 0, z: 0.06975647, w: 0.9975641}
   m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7980615855433685726}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.438}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.57, y: 11.021}
+  m_AnchoredPosition: {x: 1.9, y: 14.5}
   m_SizeDelta: {x: -3.05, y: -20.453}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3433643904384533577
@@ -426,8 +426,8 @@ MonoBehaviour:
     du sire de La Tr\xE9moille, se trouvant lors pr\xE8s des appartements du sire
     de Giac."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
+  m_sharedMaterial: {fileID: 6805872390976006843, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -451,13 +451,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.56
-  m_fontSizeBase: 1.56
+  m_fontSize: 1.5
+  m_fontSizeBase: 1.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0.75
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 2.0467224}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 3661741583585172591}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0.00486}
-  m_LocalScale: {x: 0.025, y: 0.04, z: 1}
+  m_LocalScale: {x: 0.025, y: 0.03, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9139119538201486764}
@@ -174,8 +174,8 @@ MonoBehaviour:
     de Giac. Apr\xE8s quoi, quatorze individus partirent vers le nord, accompagn\xE9s
     par plusieurs membres du conseil."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
+  m_sharedMaterial: {fileID: 6805872390976006843, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 0.75
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -269,8 +269,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5565587902576754973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.15, y: 1, z: 23.5}
-  m_LocalScale: {x: 11.900999, y: 0.1, z: 7.3306994}
+  m_LocalPosition: {x: -23, y: 1, z: 20}
+  m_LocalScale: {x: 14.119346, y: 0.1, z: 10.578919}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 328352908893436675}

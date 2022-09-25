@@ -77,8 +77,8 @@ MonoBehaviour:
     du Dauphin\xE9, le comte de Foix, le mar\xE9chal de Brosse, les seigneurs d\u2019Albret,
     de La Tremoille, de Giac et de Ligni\xE8res.  \r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
+  m_sharedMaterial: {fileID: 6805872390976006843, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -102,19 +102,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.037
+  m_fontSize: 1.4
   m_fontSizeBase: 0.037
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 0
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 46.55
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 1.1359005, z: 0, w: 1.2409992}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -171,8 +171,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4597166222582829494}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.01667}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00094}
+  m_LocalScale: {x: 0.025, y: 0.025, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8343437347256494197}
@@ -181,8 +181,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00615, y: 0}
-  m_SizeDelta: {x: 0.86991, y: 0.834}
+  m_AnchoredPosition: {x: 0.01808, y: -0}
+  m_SizeDelta: {x: 32.71381, y: 36.657}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8589042786145938257
 Canvas:
@@ -273,8 +273,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4621120339058560196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 1, z: 20}
-  m_LocalScale: {x: 14, y: 0.1, z: 14}
+  m_LocalPosition: {x: 3, y: 1, z: 19}
+  m_LocalScale: {x: 14.792399, y: 0.1, z: 15.5204}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 690176609695086298}

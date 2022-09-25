@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
-  m_Name: Jean Stuart
+  m_Name: "Jean D'Alen\xE7on"
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 67152f1ff58c1a8429cc8b5f70f1642e, type: 3}
-  Name: Jean Stuart
-  Description: 
+  Name: "Jean D'Alen\xE7on"
+  Description: "Duc d\u2019Alen\xE7on, il fut ruin\xE9 par sa capture \xE0 la bataille
+    de Verneuil en 1424, ce qui lui fit d\xE9velopper une grande animosit\xE9 contre
+    les Anglais."
   Type: 0
