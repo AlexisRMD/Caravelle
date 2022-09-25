@@ -23,6 +23,7 @@ public class Tableau : MonoBehaviour
     public GameObject Doc8;
     public GameObject Doc9;
     public GameObject Doc10;
+    public GameObject DocControles;
     private Dictionary<int, GameObject> docs = new();
     [Header("References Dialogue")]
     public DialogueData Introduction;
@@ -52,11 +53,13 @@ public class Tableau : MonoBehaviour
         docs.Add(8, Doc8);
         docs.Add(9, Doc9);
         docs.Add(10, Doc10);
+        docs.Add(11, DocControles);
         dialogues.Add(1, ThreeOne);
         dialogues.Add(2, FourOne);
         dialogues.Add(3, SixOne);
         dialogues.Add(4, Epilogue);
         DropItem(historic[0]);
+        Instantiate(docs[11]);
         StartCoroutine(Dialogue.Instance.StartDialogue(Introduction));
     }
 
@@ -144,6 +147,8 @@ public class Tableau : MonoBehaviour
 
             if (!thisLinkExist) continue;
 
+
+            AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.yes);
             //this link is a good link, verify if other links are not also linked
             //if so, drop new stones, and remove if needed
 
@@ -164,7 +169,11 @@ public class Tableau : MonoBehaviour
             if (!allLinked) break;
 
             DropItem(link);
-            if(historic[link.num + 1].isCheckpoint) errors = 0;
+            if (historic[link.num + 1].isCheckpoint)
+            {
+                errors = 0;
+                AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.checkpoint);
+            }
             actualStage++;
 
             break;
@@ -172,6 +181,8 @@ public class Tableau : MonoBehaviour
 
         if (!thisLinkExist) {
             //not good :( +1 error + screenshake + remove link
+
+            AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.no);
             StartCoroutine(SelectStone.Instance.CameraShake());
             errors++;
             SelectStone.Instance.RemoveLink(g1, g2);
@@ -181,6 +192,7 @@ public class Tableau : MonoBehaviour
 
             if (errors >= 3) {
                 ReturnCheckpoint(actualStage);
+                AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.swipBoard);
                 errors = 0;
             }
         }

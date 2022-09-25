@@ -54,6 +54,9 @@ public class SelectStone : MonoBehaviour
         if (clickedObject.TryGetComponent(out Stone st)) clickedObject.transform.rotation = st.rotationInit;
         else clickedObject.transform.rotation = Quaternion.identity;
 
+        if(clickedObject.name.Contains("Doc")) AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.upDoc);
+        else AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.upStone);
+
         while (Input.GetMouseButton(0))
         {
             float initialDistance = Vector3.Distance(clickedObject.transform.position, mainCamera.transform.position);
@@ -75,6 +78,8 @@ public class SelectStone : MonoBehaviour
 
         if (rb != null) rb.velocity = Vector3.zero; rb.freezeRotation = false; rb.constraints = RigidbodyConstraints.None;
         
+        if (clickedObject.name.Contains("Doc")) AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.placeDoc);
+        else AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.placeStone);
     }
 
     private IEnumerator LineUpdate(GameObject clickedObject, LineController line)
