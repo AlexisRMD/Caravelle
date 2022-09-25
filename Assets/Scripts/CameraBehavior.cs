@@ -9,7 +9,7 @@ public class CameraBehavior : MonoBehaviour
     public float movingSensitivity = 10f;
     public float zoomSensitivity = 10f;
     public Vector3 Bounds;
-
+    public DialogueData dd;
 
     private void Start()
     {
@@ -19,50 +19,32 @@ public class CameraBehavior : MonoBehaviour
     {
         Move();
         Zoom();
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            StartCoroutine(Dialogue.Instance.StartDialogue(dd));
+        }
     }
 
-    private Ray ray;
-    private RaycastHit hitInfo;
-    private Vector3 startPos;
-    private Vector3 GetWorldPosition()
-    {
-        ray = cam.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hitInfo, 999f))
-        {
-            return hitInfo.point;
-        }
-        return Vector3.zero;
-    }
     private void Move()
     {
-        if (Input.GetMouseButtonDown(2))
-        {
-            startPos = GetWorldPosition();
-        }
-        if (Input.GetMouseButton(2))
-        {
-            Vector3 direction = startPos - GetWorldPosition();
-            transform.position += direction;
-        }
-        
         Vector3 newPosition = cam.transform.position;
         //Top
-        if (Input.mousePosition.y >= Screen.height * 0.95 || Input.GetKey(KeyCode.Z))
+        if (Input.mousePosition.y >= Screen.height * 0.95 || Input.GetKey(KeyCode.Z) || (Input.GetMouseButton(2) && Input.GetAxis("Mouse Y") < 0))
         {
             newPosition += Vector3.forward * (Time.deltaTime * movingSensitivity);
         }
         //Down
-        else if (Input.mousePosition.y <= Screen.height * 0.05 || Input.GetKey(KeyCode.S))
+        else if (Input.mousePosition.y <= Screen.height * 0.05 || Input.GetKey(KeyCode.S) || (Input.GetMouseButton(2) && Input.GetAxis("Mouse Y") > 0))
         {
             newPosition += -Vector3.forward * (Time.deltaTime * movingSensitivity);
         }
         // Right
-        if (Input.mousePosition.x >= Screen.width * 0.95 || Input.GetKey(KeyCode.D))
+        if (Input.mousePosition.x >= Screen.width * 0.95 || Input.GetKey(KeyCode.D) || (Input.GetMouseButton(2) && Input.GetAxis("Mouse X") < 0))
         {
             newPosition += cam.transform.right * (Time.deltaTime * movingSensitivity);
         }
         // Left
-        else if (Input.mousePosition.x <= Screen.width * 0.05 || Input.GetKey(KeyCode.Q))
+        else if (Input.mousePosition.x <= Screen.width * 0.05 || Input.GetKey(KeyCode.Q) || (Input.GetMouseButton(2) && Input.GetAxis("Mouse X") > 0))
         {
             newPosition += -cam.transform.right * (Time.deltaTime * movingSensitivity);
         }

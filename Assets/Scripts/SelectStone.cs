@@ -87,7 +87,7 @@ public class SelectStone : MonoBehaviour
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         Plane hPlane = new Plane(Vector3.up, Vector3.up*line.posY);
         float distance;
-
+        AudioPlay.Instance.TraceLine();
         while (Input.GetMouseButton(1))
         {
             ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -98,7 +98,7 @@ public class SelectStone : MonoBehaviour
 
             yield return waitForFixedUpdate;
         }
-
+        AudioPlay.Instance.StopLine();
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {

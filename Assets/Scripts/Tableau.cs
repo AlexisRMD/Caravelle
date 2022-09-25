@@ -112,10 +112,12 @@ public class Tableau : MonoBehaviour
             step.docIsPlaced = true;
         }
 
-        if(step.dialogue > -1)
+        if (step.dialogue > -1 && !step.dialogueHasBeenSaid)
         {
             StartCoroutine(Dialogue.Instance.StartDialogue(dialogues[step.dialogue]));
+            step.dialogueHasBeenSaid = true;
         }
+        AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.newStone);
 
         //alternative connexions
         HashSet<int> sameStep = new HashSet<int>();
@@ -172,7 +174,7 @@ public class Tableau : MonoBehaviour
             if (!allLinked) break;
 
             DropItem(link);
-            if (historic[link.num + 1].isCheckpoint)
+            if (historic[link.num].isCheckpoint)
             {
                 errors = 0;
                 AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.checkpoint);
@@ -263,4 +265,5 @@ public class Drop
     public int doc = -1;
     public int dialogue = -1;
     [HideInInspector] public bool docIsPlaced = false;
+    [HideInInspector] public bool dialogueHasBeenSaid = false;
 }
