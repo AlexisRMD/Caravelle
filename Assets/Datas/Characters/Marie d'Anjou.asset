@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 7e971dd30a04c5a41ac128a0e6952f60, type: 3}
   Name: Marie d'Anjou
-  Description: 
+  Description: "Fille de Yolande d\u2019Aragon et de Louis II d\u2019Anjou, elle
+    contracta un excellent mariage en 1422."
   Type: 0

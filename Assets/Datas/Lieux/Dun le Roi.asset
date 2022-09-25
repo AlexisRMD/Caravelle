@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dun le Roi
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 4883b2e38fe7a2a4d9049ac23c7c3c0c, type: 3}
-  Name: Angleterre
+  Name: Dun le Roi
   Description: "aujourd\u2019hui appel\xE9 Dun-sur-Auron, cette place-forte du Cher
     appartient \xE0 Marguerite de Bourgogne, l\u2019\xE9pouse d\u2019Arthur de Richemont."
   Type: 1

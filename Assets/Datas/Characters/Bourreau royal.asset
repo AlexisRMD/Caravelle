@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: df594484427b2454da375cb740359c7f, type: 3}
   Name: Bourreau royal
-  Description: 
+  Description: Un professionnel dans son art.
   Type: 0

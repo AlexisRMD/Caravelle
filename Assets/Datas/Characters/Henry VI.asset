@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 9444a4cbbc55a8a418376afd410b9854, type: 3}
   Name: Henry VI
-  Description: 
+  Description: "Roi d\u2019Angleterre et pr\xE9tendant \xE0 la couronne de France."
   Type: 0

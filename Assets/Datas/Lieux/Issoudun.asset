@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 52867f174cb73ca4d8ee9ab1eb8fb685, type: 3}
   Name: Issoudun
-  Description: "Dans le d\xE9partement de l\u2019Indre"
+  Description: "Ville de l\u2019Indre, le roi y dispose d\u2019un logis o\xF9 pouvaient
+    demeurer ses conseillers."
   Type: 1
