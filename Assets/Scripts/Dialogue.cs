@@ -22,10 +22,6 @@ public class Dialogue : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-    }
-
-    private void Start()
-    {
         DialogueIndex = 0;
         DialogueText.color = new Color(DialogueText.color.r, DialogueText.color.g, DialogueText.color.b, TextFadedAlpha);
         gameObject.SetActive(false);

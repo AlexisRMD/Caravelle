@@ -73,6 +73,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 1
+    dialogue: -1
     docIsPlaced: 0
   - num: 1
     connectPierres:
@@ -88,6 +89,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 2
     connectPierres:
@@ -103,6 +105,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 2
+    dialogue: -1
     docIsPlaced: 0
   - num: 3
     connectPierres:
@@ -120,6 +123,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 4
     connectPierres:
@@ -135,6 +139,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 3
+    dialogue: -1
     docIsPlaced: 0
   - num: 5
     connectPierres:
@@ -149,6 +154,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 6
     connectPierres:
@@ -177,6 +183,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: 4
+    dialogue: -1
     docIsPlaced: 0
   - num: 7
     connectPierres:
@@ -209,6 +216,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: 5
+    dialogue: 1
     docIsPlaced: 0
   - num: 8
     connectPierres:
@@ -225,6 +233,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 9
     connectPierres:
@@ -239,6 +248,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: 2
     docIsPlaced: 0
   - num: 10
     connectPierres:
@@ -254,6 +264,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 6
+    dialogue: -1
     docIsPlaced: 0
   - num: 11
     connectPierres:
@@ -269,6 +280,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 7
+    dialogue: -1
     docIsPlaced: 0
   - num: 12
     connectPierres:
@@ -287,6 +299,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 8
+    dialogue: 3
     docIsPlaced: 0
   - num: 13
     connectPierres:
@@ -308,6 +321,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 14
     connectPierres:
@@ -329,6 +343,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 15
     connectPierres:
@@ -348,6 +363,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 16
     connectPierres:
@@ -367,6 +383,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 17
     connectPierres:
@@ -386,6 +403,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 18
     connectPierres:
@@ -405,6 +423,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 19
     connectPierres:
@@ -424,6 +443,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 20
     connectPierres:
@@ -444,6 +464,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: 9
+    dialogue: -1
     docIsPlaced: 0
   - num: 21
     connectPierres:
@@ -466,6 +487,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 22
     connectPierres:
@@ -484,6 +506,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 23
     connectPierres:
@@ -499,6 +522,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 1
     doc: 10
+    dialogue: -1
     docIsPlaced: 0
   - num: 24
     connectPierres:
@@ -514,6 +538,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 25
     connectPierres:
@@ -532,6 +557,7 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: -1
     docIsPlaced: 0
   - num: 26
     connectPierres:
@@ -552,6 +578,16 @@ MonoBehaviour:
     hasBeenDrop: 0
     isCheckpoint: 0
     doc: -1
+    dialogue: 4
+    docIsPlaced: 0
+  - num: 27
+    connectPierres: []
+    dropPierres: []
+    removePierres: []
+    hasBeenDrop: 0
+    isCheckpoint: 0
+    doc: -1
+    dialogue: -1
     docIsPlaced: 0
   StoneCharacter: {fileID: 3542440861458654426, guid: 2bcb0500298261049af2f723857bdd89, type: 3}
   StoneLocation: {fileID: 6991336496021502315, guid: 61048f0054b53114496867d086833c94, type: 3}
@@ -567,4 +603,9 @@ MonoBehaviour:
   Doc8: {fileID: 5565587902576754973, guid: 3aa09b6450131d944bd153724331b35e, type: 3}
   Doc9: {fileID: 4427328489146271377, guid: 9673e233373322047975a0d5c0f12da4, type: 3}
   Doc10: {fileID: 6591946879449687095, guid: 379c278ee1b16ee41bcc3b7e46e3e569, type: 3}
+  Introduction: {fileID: 11400000, guid: 003c1b17e9ea0784daf178dda5ec3f41, type: 2}
+  ThreeOne: {fileID: 11400000, guid: ee4ffb9e4d3e24140ae5e7a20ef822eb, type: 2}
+  FourOne: {fileID: 11400000, guid: 3f7b45ee36374ba43ba0e75c8ffcdbe3, type: 2}
+  SixOne: {fileID: 11400000, guid: a8b117a3c0aedca4ba672b01cd4106b0, type: 2}
+  Epilogue: {fileID: 11400000, guid: 2adbe6f71765e3e40b752ce7484c1ba9, type: 2}
   linksRemaining: 0
