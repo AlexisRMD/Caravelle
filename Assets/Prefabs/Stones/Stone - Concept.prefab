@@ -284,6 +284,9 @@ GameObject:
   - component: {fileID: 3542440861458656041}
   - component: {fileID: 3542440861458656042}
   - component: {fileID: 558464970717653405}
+  - component: {fileID: 3701191486892640596}
+  - component: {fileID: 4242872624348284638}
+  - component: {fileID: 8449410971625964371}
   m_Layer: 0
   m_Name: Stone - Concept
   m_TagString: Draggable
@@ -393,6 +396,45 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 3b42c15970ee54a4d984f3a46a0ee303, type: 3}
+--- !u!65 &3701191486892640596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3542440861458654426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0.1}
+--- !u!65 &4242872624348284638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3542440861458654426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 0.85, z: 0.2}
+  m_Center: {x: 0.8, y: -0.8, z: 0.1}
+--- !u!65 &8449410971625964371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3542440861458654426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 0.85, z: 0.2}
+  m_Center: {x: -0.8, y: 0.8, z: 0.1}
 --- !u!1 &5468414053381117521
 GameObject:
   m_ObjectHideFlags: 0
