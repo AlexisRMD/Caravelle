@@ -390,69 +390,12 @@ MonoBehaviour:
       pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
       pierre2: {fileID: 11400000, guid: 250227454dbc98b47b2eed0ce5c350ae, type: 2}
-    dropPierres:
-    - {fileID: 11400000, guid: 19f27843c85cf24429e6b1161e2f1e5d, type: 2}
-    - {fileID: 11400000, guid: 003aa604a0d24e34f917c241d10e1955, type: 2}
-    - {fileID: 11400000, guid: 22588e36795374f49aa2baf43b27b10c, type: 2}
-    removePierres: []
-    hasBeenDrop: 0
-    isCheckpoint: 0
-    doc: -1
-    dialogue: -1
-    docIsPlaced: 0
-    dialogueHasBeenSaid: 0
-  - num: 17
-    connectPierres:
-    - pierre1: {fileID: 11400000, guid: 6c95e50b3dabf6049b35675b570ad1da, type: 2}
-      pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
-      pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
-      pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
       pierre2: {fileID: 11400000, guid: ca792f248e930e14d81deaa7de8dbe74, type: 2}
-    dropPierres:
-    - {fileID: 11400000, guid: 19f27843c85cf24429e6b1161e2f1e5d, type: 2}
-    - {fileID: 11400000, guid: 003aa604a0d24e34f917c241d10e1955, type: 2}
-    - {fileID: 11400000, guid: 22588e36795374f49aa2baf43b27b10c, type: 2}
-    removePierres: []
-    hasBeenDrop: 0
-    isCheckpoint: 0
-    doc: -1
-    dialogue: -1
-    docIsPlaced: 0
-    dialogueHasBeenSaid: 0
-  - num: 18
-    connectPierres:
-    - pierre1: {fileID: 11400000, guid: 6c95e50b3dabf6049b35675b570ad1da, type: 2}
-      pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
-      pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
-      pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
-      pierre2: {fileID: 11400000, guid: cf8c4faff662667448bcc181c892def8, type: 2}
-    dropPierres:
-    - {fileID: 11400000, guid: 19f27843c85cf24429e6b1161e2f1e5d, type: 2}
-    - {fileID: 11400000, guid: 003aa604a0d24e34f917c241d10e1955, type: 2}
-    - {fileID: 11400000, guid: 22588e36795374f49aa2baf43b27b10c, type: 2}
-    removePierres: []
-    hasBeenDrop: 0
-    isCheckpoint: 0
-    doc: -1
-    dialogue: -1
-    docIsPlaced: 0
-    dialogueHasBeenSaid: 0
-  - num: 19
-    connectPierres:
-    - pierre1: {fileID: 11400000, guid: 6c95e50b3dabf6049b35675b570ad1da, type: 2}
-      pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: 892804149963aa343adc3f051d904b9b, type: 2}
-      pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
-    - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
-      pierre2: {fileID: 11400000, guid: 029a379597df04749bcae08e6343ad09, type: 2}
     - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
       pierre2: {fileID: 11400000, guid: e7bd1fea8f04fa147a05be744202fd03, type: 2}
+    - pierre1: {fileID: 11400000, guid: 16224c914bbfe6e4398bad07789a417d, type: 2}
+      pierre2: {fileID: 11400000, guid: cf8c4faff662667448bcc181c892def8, type: 2}
     dropPierres:
     - {fileID: 11400000, guid: 19f27843c85cf24429e6b1161e2f1e5d, type: 2}
     - {fileID: 11400000, guid: 003aa604a0d24e34f917c241d10e1955, type: 2}

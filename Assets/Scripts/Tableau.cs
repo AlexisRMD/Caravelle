@@ -119,14 +119,14 @@ public class Tableau : MonoBehaviour
 
         //alternative connexions
         HashSet<int> sameStep = new HashSet<int>();
-        sameStep.Add(15); sameStep.Add(16); sameStep.Add(17); sameStep.Add(18); sameStep.Add(19);
+        sameStep.Add(15); sameStep.Add(16);
         if (sameStep.Contains(step.num))
         {
             foreach (var num in sameStep)
             {
                 historic[num].hasBeenDrop = true;
             }
-            actualStage = 19;
+            actualStage = 16;
         }
     }
 
@@ -207,9 +207,7 @@ public class Tableau : MonoBehaviour
 
         if (!historic[returnStage].isCheckpoint)
         {
-            HashSet<int> sameStep = new HashSet<int>();
-            sameStep.Add(16); sameStep.Add(17); sameStep.Add(18); sameStep.Add(19);
-            if (sameStep.Contains(returnStage))
+            if (returnStage==16)
             {
                 actualStage = 15;
                 return;
