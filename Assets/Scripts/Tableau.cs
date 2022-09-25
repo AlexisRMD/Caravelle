@@ -145,6 +145,26 @@ public class Tableau : MonoBehaviour
             }
             actualStage = 9;
         }
+        sameStep.Clear();
+        sameStep.Add(20); sameStep.Add(21);
+        if (sameStep.Contains(step.num))
+        {
+            foreach (var num in sameStep)
+            {
+                historic[num].hasBeenDrop = true;
+            }
+            actualStage = 20;
+        }
+        sameStep.Clear();
+        sameStep.Add(23); sameStep.Add(24); sameStep.Add(25);
+        if (sameStep.Contains(step.num))
+        {
+            foreach (var num in sameStep)
+            {
+                historic[num].hasBeenDrop = true;
+            }
+            actualStage = 23;
+        }
     }
 
     public void VerifyLink(GameObject g1, GameObject g2, LineController linkObj)
@@ -240,6 +260,16 @@ public class Tableau : MonoBehaviour
             if (returnStage == 9)
             {
                 actualStage = 8;
+                return;
+            }
+            if (returnStage == 21)
+            {
+                actualStage = 20;
+                return;
+            }
+            if (returnStage == 24 || returnStage == 25)
+            {
+                actualStage = 23;
                 return;
             }
 
