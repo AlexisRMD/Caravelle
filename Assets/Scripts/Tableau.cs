@@ -24,6 +24,13 @@ public class Tableau : MonoBehaviour
     public GameObject Doc9;
     public GameObject Doc10;
     private Dictionary<int, GameObject> docs = new();
+    [Header("References Dialogue")]
+    public DialogueData Introduction;
+    public DialogueData ThreeOne;
+    public DialogueData FourOne;
+    public DialogueData SixOne;
+    public DialogueData Epilogue;
+    private Dictionary<int, DialogueData> dialogues = new();
 
     [HideInInspector] public int linksRemaining;
     private int errors = 0;
@@ -45,7 +52,12 @@ public class Tableau : MonoBehaviour
         docs.Add(8, Doc8);
         docs.Add(9, Doc9);
         docs.Add(10, Doc10);
+        dialogues.Add(1, ThreeOne);
+        dialogues.Add(2, FourOne);
+        dialogues.Add(3, SixOne);
+        dialogues.Add(4, Epilogue);
         DropItem(historic[0]);
+        StartCoroutine(Dialogue.Instance.StartDialogue(Introduction));
     }
 
     private GameObject CreateStone(StoneData data)
@@ -92,6 +104,11 @@ public class Tableau : MonoBehaviour
         {
             Instantiate(docs[step.doc]);
             step.docIsPlaced = true;
+        }
+
+        if(step.dialogue > -1)
+        {
+            StartCoroutine(Dialogue.Instance.StartDialogue(dialogues[step.dialogue]));
         }
 
         //alternative connexions
@@ -228,5 +245,6 @@ public class Drop
     public bool hasBeenDrop = false;
     public bool isCheckpoint;
     public int doc = -1;
+    public int dialogue = -1;
     [HideInInspector] public bool docIsPlaced = false;
 }
