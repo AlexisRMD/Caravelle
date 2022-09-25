@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - "Levez-vous\_! Vous \xEAtes trop \xE0 votre aise\_!\_"
+  dialogueSound: {fileID: 8300000, guid: 27a52d61b72743049a8e39e1c3060245, type: 3}
