@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
-  m_Name: Phillipe le Bon
+  m_Name: Marguerite de Bourgogne
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 8c33666c2c56eeb4e96eddd3de14b7bf, type: 3}
-  Name: Phillipe le Bon
+  Name: Marguerite de Bourgogne
   Description: 
   Type: 0

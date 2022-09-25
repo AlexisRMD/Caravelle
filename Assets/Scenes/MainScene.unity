@@ -1423,7 +1423,6 @@ MonoBehaviour:
   movingSensitivity: 20
   zoomSensitivity: 300
   Bounds: {x: 20, y: 40, z: 20}
-  dd: {fileID: 11400000, guid: 2adbe6f71765e3e40b752ce7484c1ba9, type: 2}
 --- !u!1001 &7271500954170499750
 PrefabInstance:
   m_ObjectHideFlags: 0
