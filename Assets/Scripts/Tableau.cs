@@ -26,6 +26,7 @@ public class Tableau : MonoBehaviour
     public GameObject Doc8;
     public GameObject Doc9;
     public GameObject Doc10;
+    public GameObject Doc11;
     public GameObject DocControles;
     public GameObject DocMap;
     private Dictionary<int, GameObject> docs = new();
@@ -62,6 +63,7 @@ public class Tableau : MonoBehaviour
         docs.Add(10, Doc10);
         docs.Add(11, DocControles);
         docs.Add(12, DocMap);
+        docs.Add(13, Doc11);
         dialogues.Add(1, ThreeOne);
         dialogues.Add(2, FourOne);
         dialogues.Add(3, SixOne);
@@ -128,52 +130,15 @@ public class Tableau : MonoBehaviour
         {
             StartCoroutine(Dialogue.Instance.StartDialogue(dialogues[step.dialogue]));
             step.dialogueHasBeenSaid = true;
-            if (step.num == 14) AudioPlay.Instance.PlayMusic(AudioPlay.Instance.music2);
-            if (step.num == 24) ReturnToMainMenuBtn.gameObject.SetActive(true);
+            if (step.num == 13) AudioPlay.Instance.PlayMusic(AudioPlay.Instance.music2);
+            if (step.num == 22)
+            {
+                AudioPlay.Instance.PlayMusic(AudioPlay.Instance.music1);
+                ReturnToMainMenuBtn.gameObject.SetActive(true);
+            }
         }
         AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.newStone);
 
-        //alternative connexions
-        HashSet<int> sameStep = new HashSet<int>();
-        sameStep.Add(16); sameStep.Add(17);
-        if (sameStep.Contains(step.num))
-        {
-            foreach (var num in sameStep)
-            {
-                historic[num].hasBeenDrop = true;
-            }
-            actualStage = 17;
-        }
-        sameStep.Clear();
-        sameStep.Add(8); sameStep.Add(9);
-        if (sameStep.Contains(step.num))
-        {
-            foreach (var num in sameStep)
-            {
-                historic[num].hasBeenDrop = true;
-            }
-            actualStage = 9;
-        }
-        sameStep.Clear();
-        sameStep.Add(20); sameStep.Add(21);
-        if (sameStep.Contains(step.num))
-        {
-            foreach (var num in sameStep)
-            {
-                historic[num].hasBeenDrop = true;
-            }
-            actualStage = 20;
-        }
-        sameStep.Clear();
-        sameStep.Add(23); sameStep.Add(24); sameStep.Add(25);
-        if (sameStep.Contains(step.num))
-        {
-            foreach (var num in sameStep)
-            {
-                historic[num].hasBeenDrop = true;
-            }
-            actualStage = 23;
-        }
     }
 
     public void VerifyLink(GameObject g1, GameObject g2, LineController linkObj)
@@ -197,10 +162,9 @@ public class Tableau : MonoBehaviour
             if (!thisLinkExist) continue;
 
 
-            AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.yes);
             //this link is a good link, verify if other links are not also linked
             //if so, drop new stones, and remove if needed
-
+            AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.yes);
             Coroutine yellow = StartCoroutine(linkObj.ChangeColorValidate(Color.yellow));
 
             bool allLinked = true;
@@ -261,27 +225,6 @@ public class Tableau : MonoBehaviour
 
         if (!historic[returnStage].isCheckpoint)
         {
-            if (returnStage==17)
-            {
-                actualStage = 16;
-                return;
-            }
-            if (returnStage == 9)
-            {
-                actualStage = 8;
-                return;
-            }
-            if (returnStage == 21)
-            {
-                actualStage = 20;
-                return;
-            }
-            if (returnStage == 24 || returnStage == 25)
-            {
-                actualStage = 23;
-                return;
-            }
-
             returnStage--;
             foreach (StoneData item in historic[returnStage].removePierres)
             {//create new stones

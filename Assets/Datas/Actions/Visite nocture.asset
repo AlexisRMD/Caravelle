@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Visite nocture
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 9895c72520f45354dbe4e40adb0ff047, type: 3}
-  Name: Visite nocture
+  Name: Visite nocturne malveillante
   Description: 
   Type: 3
