@@ -202,6 +202,7 @@ public class Tableau : MonoBehaviour
             //if so, drop new stones, and remove if needed
 
             Coroutine yellow = StartCoroutine(linkObj.ChangeColorValidate(Color.yellow));
+            linkObj.ColorCoroutine = yellow;
 
             bool allLinked = true;
             linksRemaining = 0;
@@ -218,8 +219,10 @@ public class Tableau : MonoBehaviour
             if (!allLinked) break;
 
             DropItem(link);
-
-            StopCoroutine(yellow);
+            if(yellow != null)
+            {
+                StopCoroutine(yellow);
+            }
             LineController[] foundStones = FindObjectsOfType<LineController>();
             foreach (LineController st in foundStones)
             {

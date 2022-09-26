@@ -48,15 +48,20 @@ public class LineController : MonoBehaviour
             SelectStone.Instance.RemoveLink(startObject, endObject);
             startObject.GetComponent<ListLinks>().RemoveLink(this);
             endObject.GetComponent<ListLinks>().RemoveLink(this);
+            if(ColorCoroutine != null)
+            {
+                StopCoroutine(ColorCoroutine);
+                ColorCoroutine = null;
+            }
             Destroy(gameObject);
         }
     }
 
-
+    public Coroutine ColorCoroutine;
     public IEnumerator ChangeColorValidate(Color newColor)
     {
         yield return new WaitForSecondsRealtime(0.4f);
-
+        
         Color initialColor = gameObject.GetComponent<MeshRenderer>().material.color;
         for (float i = 0; i < 1; i+=0.2f)
         {
