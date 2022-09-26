@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
-  m_Name: "Rivalit\xE9"
+  m_Name: A
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 4c77c5f78830fe74aa17ab35ee09c646, type: 3}
-  Name: "Rivalit\xE9"
+  Sprite: {fileID: 21300000, guid: 5112107629256af4c92e33c860173607, type: 3}
+  Name: A
   Description: 
-  Type: 2
+  Type: 5
