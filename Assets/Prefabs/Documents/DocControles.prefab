@@ -67,7 +67,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<u><size=150%>Controles</size></u>\nMaintenir clic gauche pour d\xE9placer
-    un objet.\nMaintenir clic droit pour relier deux objets.\nZQSD pour se d\xE9placer
+    un objet.\nMaintenir clic droit pour tirer des liens.\nZQSD pour se d\xE9placer
     sur la table.\nRouler la molette pour zoomer."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 29133b2caa68a754990e13855da8a2c9, type: 2}
@@ -95,8 +95,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 2.63
-  m_fontSizeBase: 2.63
+  m_fontSize: 3.1
+  m_fontSizeBase: 3.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
