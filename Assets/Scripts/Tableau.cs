@@ -311,6 +311,7 @@ public class Lien
 {
     public StoneData pierre1;
     public StoneData pierre2;
+    public int hasAlternativeLinkNumber = -1;
 
     public bool Contains(StoneData s1, StoneData s2)
     {
@@ -325,7 +326,7 @@ public class Drop
     public List<Lien> connectPierres = new();
     public List<StoneData> dropPierres = new();
     public List<StoneData> removePierres = new();
-    public bool hasBeenDrop = false;
+    [HideInInspector] public bool hasBeenDrop = false;
     public bool isCheckpoint;
     public int doc = -1;
     public int dialogue = -1;
