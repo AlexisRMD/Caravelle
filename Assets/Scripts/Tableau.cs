@@ -229,7 +229,7 @@ public class Tableau : MonoBehaviour
                 st.gameObject.GetComponent<MeshRenderer>().material.color = Color.grey;
             }
 
-            if (historic[link.num].isCheckpoint)
+            if (historic[link.num-1].isCheckpoint)
             {
                 errors = 0;
                 AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.checkpoint);
@@ -260,6 +260,7 @@ public class Tableau : MonoBehaviour
 
     private void ReturnCheckpoint(int returnStage)
     {
+
         if (returnStage < 0) return;
 
         if (!historic[returnStage].isCheckpoint)
