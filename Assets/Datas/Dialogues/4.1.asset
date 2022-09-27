@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - "Nous avons intercept\xE9 messire Denisot Fran\xE7ois, serviteur du seigneur
-    de La Tr\xE9moille. Il portait ce mot \xE0 la dame de l\u2019Isle-Bouchard."
+    de La Tr\xE9moille. Il portait ce mot \xE0 la dame de l\u2019Isle-Bouchard\_"
   dialogueSound: {fileID: 8300000, guid: 0af5632d3ceb4534cb42ff2632c80ce0, type: 3}
