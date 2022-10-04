@@ -106,7 +106,7 @@ public class SelectStone : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             if (hit.collider != null && hit.collider.gameObject.CompareTag("Draggable") && hit.collider.gameObject != clickedObject
-                && LinkNotExist(hit.collider.gameObject, clickedObject))
+                && LinkNotExist(hit.collider.gameObject, clickedObject) && hit.collider.gameObject.TryGetComponent(out ListLinks _) )
             {
 
                 HashSet<GameObject> tempLink = new();

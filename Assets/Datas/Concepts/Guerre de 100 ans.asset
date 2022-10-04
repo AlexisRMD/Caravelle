@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Guerre de 100 ans
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: a70f6e32a32abc744a6298ec8255bfa2, type: 3}
-  Name: Guerre de 100 ans
+  Name: Guerre de Cent Ans
   Description: 
   Type: 2

@@ -129,7 +129,7 @@ public class Tableau : MonoBehaviour
             StartCoroutine(Dialogue.Instance.StartDialogue(dialogues[step.dialogue]));
             step.dialogueHasBeenSaid = true;
             if (step.num == 14) AudioPlay.Instance.PlayMusic(AudioPlay.Instance.music2);
-            if (step.num == 28) ReturnToMainMenuBtn.gameObject.SetActive(true);
+            if (step.num == 27) ReturnToMainMenuBtn.gameObject.SetActive(true);
         }
         AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.newStone);
 
@@ -162,7 +162,7 @@ public class Tableau : MonoBehaviour
             {
                 historic[num].hasBeenDrop = true;
             }
-            actualStage = 20;
+            actualStage = 21;
         }
         sameStep.Clear();
         sameStep.Add(23); sameStep.Add(24); sameStep.Add(25);
@@ -172,7 +172,7 @@ public class Tableau : MonoBehaviour
             {
                 historic[num].hasBeenDrop = true;
             }
-            actualStage = 23;
+            actualStage = 25;
         }
     }
 
@@ -229,7 +229,7 @@ public class Tableau : MonoBehaviour
                 st.gameObject.GetComponent<MeshRenderer>().material.color = Color.grey;
             }
 
-            if (historic[link.num].isCheckpoint)
+            if (historic[link.num-1].isCheckpoint)
             {
                 errors = 0;
                 AudioPlay.Instance.PlayOneShot(AudioPlay.Instance.checkpoint);
@@ -260,6 +260,7 @@ public class Tableau : MonoBehaviour
 
     private void ReturnCheckpoint(int returnStage)
     {
+
         if (returnStage < 0) return;
 
         if (!historic[returnStage].isCheckpoint)

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41811cbbcb0b00418da4038113e7334, type: 3}
   m_Name: Phillipe le Bon
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: f88105515e9ce6843b8b036815cec853, type: 3}
-  Name: Phillipe le Bon
+  Sprite: {fileID: 21300000, guid: ffbe8e24b92b3b6449a57226f549ff5a, type: 3}
+  Name: Philippe le Bon
   Description: "Duc de Bourgogne, il a jur\xE9 la chute de Charles VII suite \xE0
     l\u2019assassinat de son p\xE8re par ce dernier."
   Type: 0
